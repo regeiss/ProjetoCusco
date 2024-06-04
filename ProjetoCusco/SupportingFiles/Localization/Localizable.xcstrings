@@ -1,0 +1,22 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Hello, cusco!" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola perro!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olá cusco!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
