@@ -41,7 +41,8 @@
 		E1B675502C0E8462003D491D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B6754F2C0E8462003D491D /* FirebaseStorage */; };
 		E1B675522C0E8462003D491D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E1B675512C0E8462003D491D /* FirebaseStorageCombine-Community */; };
 		E1B675542C0E8462003D491D /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = E1B675532C0E8462003D491D /* FirebaseVertexAI-Preview */; };
-		E1B675562C0E94BC003D491D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B675552C0E94BC003D491D /* GoogleService-Info.plist */; };
+		E1B675582C0FD9DC003D491D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */; };
+		E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1B675592C0FE2CB003D491D /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +53,8 @@
 		E1B675062C0CAB26003D491D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1B6750E2C0CB05B003D491D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		E1B675122C0CE75E003D491D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		E1B675552C0E94BC003D491D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1B675592C0FE2CB003D491D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,8 @@
 		E1B674F32C0CAB25003D491D = {
 			isa = PBXGroup;
 			children = (
-				E1B675552C0E94BC003D491D /* GoogleService-Info.plist */,
+				E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */,
+				E1B675592C0FE2CB003D491D /* .gitignore */,
 				E1B6750E2C0CB05B003D491D /* .swiftlint.yml */,
 				E1B674FE2C0CAB25003D491D /* ProjetoCusco */,
 				E1B674FD2C0CAB25003D491D /* Products */,
@@ -308,8 +311,9 @@
 			files = (
 				E1B6750F2C0CB05B003D491D /* .swiftlint.yml in Resources */,
 				E1B675072C0CAB26003D491D /* Preview Assets.xcassets in Resources */,
-				E1B675562C0E94BC003D491D /* GoogleService-Info.plist in Resources */,
+				E1B675582C0FD9DC003D491D /* GoogleService-Info.plist in Resources */,
 				E1B675132C0CE75E003D491D /* Localizable.xcstrings in Resources */,
+				E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */,
 				E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

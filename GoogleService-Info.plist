@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyB58MCE8aLM3jtfrsJdlzlOsFnxdpvctU4</string>
+	<string>AIzaSyAxSlkmL8UEUIWRLX7Wuwqlh8vrqYpea4g</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1077776098542</string>
+	<string>158514931997</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.petMatch</string>
+	<string>com.rgeiss.ProjetoCusco</string>
 	<key>PROJECT_ID</key>
-	<string>buscador-de-pets</string>
+	<string>petfinder-b1844</string>
 	<key>STORAGE_BUCKET</key>
-	<string>buscador-de-pets.appspot.com</string>
+	<string>petfinder-b1844.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1077776098542:ios:e1a84494c0531080b87fff</string>
+	<string>1:158514931997:ios:e00aa7cfb172147f3cd9f4</string>
 </dict>
 </plist>
