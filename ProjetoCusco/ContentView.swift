@@ -7,18 +7,84 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, cusco!")
+struct ContentView: View
+{
+    enum Tab
+    {
+        case taba
+        case tabb
+        case tacc
+        case tabd
+    }
+
+    @Environment(AppRouter.self) private var appRouter
+
+    var body: some View
+    {
+        @Bindable var appRouter = appRouter
+
+        TabView(selection: $appRouter.selectedTab) 
+        {
+            TabA()
+                .tag(Tab.taba)
+                .tabItem {
+                    Image(systemName: "a.circle")
+                }
+
+            TabB()
+                .tag(Tab.tabb)
+                .tabItem {
+                    Image(systemName: "b.circle")
+                }
+
+            TabC()
+                .tag(Tab.tacc)
+                .tabItem {
+                    Image(systemName: "c.circle")
+                }
+
+            TabD()
+                .tag(Tab.tabd)
+                .tabItem {
+                    Image(systemName: "d.circle")
+                }
         }
-        .padding()
+        .environment(\.currentTab, $appRouter.selectedTab)
     }
 }
 
-#Preview {
+struct TabA: View
+{
+    var body: some View
+    {
+        Text("A")
+    }
+}
+
+struct TabB: View
+{
+    var body: some View
+    {
+        Text("B")
+    }
+}
+
+struct TabC: View
+{
+    var body: some View
+    {
+        Text("C")
+    }
+}
+
+struct TabD: View
+{
+    var body: some View
+    {
+        Text("D")
+    }
+}
+#Preview
+{
     ContentView()
 }

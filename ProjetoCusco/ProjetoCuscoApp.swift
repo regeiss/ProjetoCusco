@@ -10,6 +10,22 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
 
+@main
+struct ProjetoCuscoApp: App 
+{
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @Bindable private var appRouter = AppRouter()
+
+    var body: some Scene
+    {
+        WindowGroup 
+        {
+            ContentView()
+                .environment(appRouter)
+        }
+    }
+}
+
 class AppDelegate: NSObject, UIApplicationDelegate
 {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool
@@ -17,7 +33,7 @@ class AppDelegate: NSObject, UIApplicationDelegate
         FirebaseApp.configure()
 
         let useEmulator = UserDefaults.standard.bool(forKey: "useEmulator")
-        if useEmulator 
+        if useEmulator
         {
           let settings = Firestore.firestore().settings
           settings.host = "localhost:8080"
@@ -27,19 +43,5 @@ class AppDelegate: NSObject, UIApplicationDelegate
           Auth.auth().useEmulator(withHost: "localhost", port: 9099)
         }
         return true
-    }
-}
-
-@main
-struct ProjetoCuscoApp: App 
-{
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-    var body: some Scene
-    {
-        WindowGroup 
-        {
-            ContentView()
-        }
     }
 }
