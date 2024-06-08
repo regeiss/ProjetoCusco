@@ -45,6 +45,14 @@
 		E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1B675592C0FE2CB003D491D /* .gitignore */; };
 		E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6755C2C11295F003D491D /* AppRouter.swift */; };
 		E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */; };
+		E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675612C126F0E003D491D /* BaseRouter.swift */; };
+		E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675632C126FC1003D491D /* RouterDestination.swift */; };
+		E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */; };
+		E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */; };
+		E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6756B2C12790F003D491D /* View+Extensions.swift */; };
+		E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */; };
+		E1B675722C128145003D491D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B675712C128145003D491D /* Launch Screen.storyboard */; };
+		E1B675762C149F82003D491D /* TabARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675752C149F82003D491D /* TabARouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +67,14 @@
 		E1B675592C0FE2CB003D491D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E1B6755C2C11295F003D491D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extensions.swift"; sourceTree = "<group>"; };
+		E1B675612C126F0E003D491D /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		E1B675632C126FC1003D491D /* RouterDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestination.swift; sourceTree = "<group>"; };
+		E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestinationDecoder.swift; sourceTree = "<group>"; };
+		E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extensions.swift"; sourceTree = "<group>"; };
+		E1B6756B2C12790F003D491D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		E1B675712C128145003D491D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E1B675752C149F82003D491D /* TabARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabARouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B675112C0CE733003D491D /* Localization */,
+				E1B675712C128145003D491D /* Launch Screen.storyboard */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -225,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				E1B6755C2C11295F003D491D /* AppRouter.swift */,
+				E1B675732C149E0C003D491D /* Base */,
+				E1B675742C149E16003D491D /* TabA */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -232,9 +251,30 @@
 		E1B6755E2C11335C003D491D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */,
+				E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */,
 				E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */,
+				E1B6756B2C12790F003D491D /* View+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1B675732C149E0C003D491D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E1B675612C126F0E003D491D /* BaseRouter.swift */,
+				E1B675632C126FC1003D491D /* RouterDestination.swift */,
+				E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E1B675742C149E16003D491D /* TabA */ = {
+			isa = PBXGroup;
+			children = (
+				E1B675752C149F82003D491D /* TabARouter.swift */,
+			);
+			path = TabA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +377,7 @@
 				E1B675132C0CE75E003D491D /* Localizable.xcstrings in Resources */,
 				E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */,
 				E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */,
+				E1B675722C128145003D491D /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,10 +410,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
+				E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */,
+				E1B675762C149F82003D491D /* TabARouter.swift in Sources */,
+				E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */,
+				E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
 				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
+				E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */,
+				E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +561,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,6 +592,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

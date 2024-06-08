@@ -84,7 +84,8 @@ struct TabD: View
         Text("D")
     }
 }
-#Preview
-{
-    ContentView()
-}
+
+//#Preview
+//{
+//    ContentView()
+//}

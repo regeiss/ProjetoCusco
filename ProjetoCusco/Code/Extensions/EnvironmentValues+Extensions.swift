@@ -14,7 +14,8 @@ struct CurrentTabKey: EnvironmentKey
 
 extension EnvironmentValues
 {
-    var currentTab: Binding<ContentView.Tab> {
+    var currentTab: Binding<ContentView.Tab> 
+    {
         get { self[CurrentTabKey.self] }
         set { self[CurrentTabKey.self] = newValue }
     }
