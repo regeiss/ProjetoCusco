@@ -31,8 +31,8 @@ import Foundation
         return [TabADestination.self]
     }
 
-    //MARK: - Public
-    func navigate(to destination: TabADestination) 
+    // MARK: - Public
+    func navigate(to destination: TabADestination)
     {
         path.append(destination)
     }
