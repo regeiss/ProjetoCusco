@@ -45,12 +45,12 @@ import SwiftUI
         return decodedRepresentation.path
     }
 
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     init() {
         observePathChanges()
     }
 
-    //MARK: - Public
+    // MARK: - Public
     func navigateBack()
     {
         guard !isEmpty else
@@ -78,8 +78,8 @@ import SwiftUI
         return decodedPath.contains(where: { $0.id == item.id })
     }
 
-    //MARK: - Private
-    private func observePathChanges() 
+    // MARK: - Private
+    private func observePathChanges()
     {
         withObservationTracking 
         {

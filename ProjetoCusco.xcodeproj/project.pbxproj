@@ -11,6 +11,13 @@
 		E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */; };
 		E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAE2C1F99A500732192 /* NetworkManager.swift */; };
 		E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB02C1F9B5400732192 /* NetworkManager+Extensions.swift */; };
+		E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB22C2101DB00732192 /* ViewTabA.swift */; };
+		E19FCAB52C2102D200732192 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB42C2102D200732192 /* Font+Extensions.swift */; };
+		E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB62C2104AD00732192 /* Color+Extensions.swift */; };
+		E19FCAB92C210D2300732192 /* TabBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB82C210D2300732192 /* TabBRouter.swift */; };
+		E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABB2C23ABE500732192 /* TabBView.swift */; };
+		E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABD2C23B3A500732192 /* TabAView.swift */; };
+		E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */; };
 		E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */; };
 		E1B675022C0CAB25003D491D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675012C0CAB25003D491D /* ContentView.swift */; };
 		E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B675032C0CAB26003D491D /* Assets.xcassets */; };
@@ -64,6 +71,13 @@
 		E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		E19FCAAE2C1F99A500732192 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E19FCAB02C1F9B5400732192 /* NetworkManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Extensions.swift"; sourceTree = "<group>"; };
+		E19FCAB22C2101DB00732192 /* ViewTabA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabA.swift; sourceTree = "<group>"; };
+		E19FCAB42C2102D200732192 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		E19FCAB62C2104AD00732192 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		E19FCAB82C210D2300732192 /* TabBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBRouter.swift; sourceTree = "<group>"; };
+		E19FCABB2C23ABE500732192 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
+		E19FCABD2C23B3A500732192 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
+		E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheet.swift; sourceTree = "<group>"; };
 		E1B674FC2C0CAB25003D491D /* ProjetoCusco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoCusco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoCuscoApp.swift; sourceTree = "<group>"; };
 		E1B675012C0CAB25003D491D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +161,15 @@
 			children = (
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E19FCABA2C23ABAA00732192 /* TabB */ = {
+			isa = PBXGroup;
+			children = (
+				E19FCAB82C210D2300732192 /* TabBRouter.swift */,
+				E19FCABB2C23ABE500732192 /* TabBView.swift */,
+			);
+			path = TabB;
 			sourceTree = "<group>";
 		};
 		E1B674F32C0CAB25003D491D = {
@@ -268,10 +291,11 @@
 		E1B6755B2C11294D003D491D /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E1B6755E2C11335C003D491D /* Extensions */,
 				E1B6755C2C11295F003D491D /* AppRouter.swift */,
 				E1B675732C149E0C003D491D /* Base */,
+				E1B6755E2C11335C003D491D /* Extensions */,
 				E1B675742C149E16003D491D /* TabA */,
+				E19FCABA2C23ABAA00732192 /* TabB */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -282,7 +306,9 @@
 				E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */,
 				E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */,
 				E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */,
+				E19FCAB42C2102D200732192 /* Font+Extensions.swift */,
 				E1B6756B2C12790F003D491D /* View+Extensions.swift */,
+				E19FCAB62C2104AD00732192 /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B675612C126F0E003D491D /* BaseRouter.swift */,
+				E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */,
 				E1B675632C126FC1003D491D /* RouterDestination.swift */,
 				E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */,
 			);
@@ -301,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				E1B675752C149F82003D491D /* TabARouter.swift */,
+				E19FCAB22C2101DB00732192 /* ViewTabA.swift */,
+				E19FCABD2C23B3A500732192 /* TabAView.swift */,
 			);
 			path = TabA;
 			sourceTree = "<group>";
@@ -438,18 +467,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19FCAB52C2102D200732192 /* Font+Extensions.swift in Sources */,
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
 				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
+				E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */,
 				E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */,
 				E1B675762C149F82003D491D /* TabARouter.swift in Sources */,
 				E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */,
+				E19FCAB92C210D2300732192 /* TabBRouter.swift in Sources */,
+				E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */,
 				E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */,
+				E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */,
+				E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
+				E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */,
 				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
 				E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */,
 				E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */,

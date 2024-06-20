@@ -13,8 +13,24 @@ struct ContentView: View
     {
         case taba
         case tabb
-        case tacc
+        case tabc
         case tabd
+
+
+        var title: String
+        {
+            return switch self
+            {
+            case .taba:
+                "Tab A"
+            case .tabb:
+                "Tab B"
+            case .tabc:
+                "Tab C"
+            case .tabd:
+                "Tab D"
+            }
+        }
     }
 
     @Environment(AppRouter.self) private var appRouter
@@ -23,22 +39,24 @@ struct ContentView: View
     {
         @Bindable var appRouter = appRouter
 
-        TabView(selection: $appRouter.selectedTab) 
+        TabView(selection: $appRouter.selectedTab)
         {
             TabA()
                 .tag(Tab.taba)
+                .environment(appRouter.tabARouter)
                 .tabItem {
                     Image(systemName: "a.circle")
                 }
 
             TabB()
                 .tag(Tab.tabb)
+                .environment(appRouter.tabBRouter)
                 .tabItem {
                     Image(systemName: "b.circle")
                 }
 
             TabC()
-                .tag(Tab.tacc)
+                .tag(Tab.tabc)
                 .tabItem {
                     Image(systemName: "c.circle")
                 }
@@ -53,21 +71,7 @@ struct ContentView: View
     }
 }
 
-struct TabA: View
-{
-    var body: some View
-    {
-        Text("A")
-    }
-}
 
-struct TabB: View
-{
-    var body: some View
-    {
-        Text("B")
-    }
-}
 
 struct TabC: View
 {
@@ -84,8 +88,3 @@ struct TabD: View
         Text("D")
     }
 }
-
-//#Preview
-//{
-//    ContentView()
-//}

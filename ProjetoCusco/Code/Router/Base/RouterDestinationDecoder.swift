@@ -22,6 +22,7 @@ struct RouterDestinationDecoder: Decodable
         }
 
         var path = [any RouterDestination]()
+        
         while !container.isAtEnd
         {
             let rawTypeName = try container.decode(String.self)

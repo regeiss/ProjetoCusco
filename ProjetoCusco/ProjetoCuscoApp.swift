@@ -45,3 +45,6 @@ class AppDelegate: NSObject, UIApplicationDelegate
         return true
     }
 }
+
+
+// SwiftUI/Environment+Objects.swift:32: Fatal error: No Observable object of type TabARouter found. A View.environmentObject(_:) for TabARouter may be missing as an ancestor of this view.
