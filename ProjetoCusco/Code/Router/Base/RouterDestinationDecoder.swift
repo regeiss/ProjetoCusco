@@ -31,8 +31,7 @@ struct RouterDestinationDecoder: Decodable
                   let type = types.first(where: { String(describing: $0) == typeName })
             else
             {
-                throw DecodingError.dataCorruptedError(in: container,
-                                                       debugDescription: "\(rawTypeName) is not decodable")
+                throw DecodingError.dataCorruptedError(in: container, debugDescription: "\(rawTypeName) is not decodable")
             }
 
             let encodedValue = try container.decode(String.self)

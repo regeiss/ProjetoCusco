@@ -11,8 +11,10 @@ enum PresentedSheet: Identifiable
     case viewOne
     case transportation(type: TransportationView.TransportationType)
 
-    var id: String {
-        return switch self {
+    var id: String 
+    {
+        return switch self 
+        {
         case .viewOne:
             "View one"
         case .transportation:

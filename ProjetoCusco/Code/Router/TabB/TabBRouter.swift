@@ -30,7 +30,7 @@ import SwiftUI
         return [Destination.self]
     }
 
-    //MARK: - Public
+    // MARK: - Public
     func navigate(to destination: Destination) 
     {
         path.append(destination)

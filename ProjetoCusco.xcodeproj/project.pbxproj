@@ -18,6 +18,14 @@
 		E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABB2C23ABE500732192 /* TabBView.swift */; };
 		E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABD2C23B3A500732192 /* TabAView.swift */; };
 		E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */; };
+		E19FCAC42C24EF1F00732192 /* TabCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC32C24EF1F00732192 /* TabCRouter.swift */; };
+		E19FCAC62C24EFAA00732192 /* InboxNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */; };
+		E19FCAC82C24F15F00732192 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC72C24F15F00732192 /* InboxView.swift */; };
+		E19FCACA2C24F1BC00732192 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC92C24F1BC00732192 /* ChatView.swift */; };
+		E19FCACC2C24F1DC00732192 /* TabC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACB2C24F1DC00732192 /* TabC.swift */; };
+		E19FCACE2C2A34A100732192 /* TabDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACD2C2A34A100732192 /* TabDRouter.swift */; };
+		E19FCAD02C2A352400732192 /* TabDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACF2C2A352400732192 /* TabDView.swift */; };
+		E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAD12C2A436800732192 /* DeeplinkManager.swift */; };
 		E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */; };
 		E1B675022C0CAB25003D491D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675012C0CAB25003D491D /* ContentView.swift */; };
 		E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B675032C0CAB26003D491D /* Assets.xcassets */; };
@@ -78,6 +86,14 @@
 		E19FCABB2C23ABE500732192 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
 		E19FCABD2C23B3A500732192 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
 		E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheet.swift; sourceTree = "<group>"; };
+		E19FCAC32C24EF1F00732192 /* TabCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCRouter.swift; sourceTree = "<group>"; };
+		E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxNavigationProtocol.swift; sourceTree = "<group>"; };
+		E19FCAC72C24F15F00732192 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		E19FCAC92C24F1BC00732192 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E19FCACB2C24F1DC00732192 /* TabC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabC.swift; sourceTree = "<group>"; };
+		E19FCACD2C2A34A100732192 /* TabDRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDRouter.swift; sourceTree = "<group>"; };
+		E19FCACF2C2A352400732192 /* TabDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDView.swift; sourceTree = "<group>"; };
+		E19FCAD12C2A436800732192 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
 		E1B674FC2C0CAB25003D491D /* ProjetoCusco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoCusco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoCuscoApp.swift; sourceTree = "<group>"; };
 		E1B675012C0CAB25003D491D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +186,27 @@
 				E19FCABB2C23ABE500732192 /* TabBView.swift */,
 			);
 			path = TabB;
+			sourceTree = "<group>";
+		};
+		E19FCAC12C24EE8700732192 /* TabC */ = {
+			isa = PBXGroup;
+			children = (
+				E19FCAC92C24F1BC00732192 /* ChatView.swift */,
+				E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */,
+				E19FCAC72C24F15F00732192 /* InboxView.swift */,
+				E19FCACB2C24F1DC00732192 /* TabC.swift */,
+				E19FCAC32C24EF1F00732192 /* TabCRouter.swift */,
+			);
+			path = TabC;
+			sourceTree = "<group>";
+		};
+		E19FCAC22C24EE9000732192 /* TabD */ = {
+			isa = PBXGroup;
+			children = (
+				E19FCACF2C2A352400732192 /* TabDView.swift */,
+				E19FCACD2C2A34A100732192 /* TabDRouter.swift */,
+			);
+			path = TabD;
 			sourceTree = "<group>";
 		};
 		E1B674F32C0CAB25003D491D = {
@@ -296,6 +333,8 @@
 				E1B6755E2C11335C003D491D /* Extensions */,
 				E1B675742C149E16003D491D /* TabA */,
 				E19FCABA2C23ABAA00732192 /* TabB */,
+				E19FCAC12C24EE8700732192 /* TabC */,
+				E19FCAC22C24EE9000732192 /* TabD */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -317,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B675612C126F0E003D491D /* BaseRouter.swift */,
+				E19FCAD12C2A436800732192 /* DeeplinkManager.swift */,
 				E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */,
 				E1B675632C126FC1003D491D /* RouterDestination.swift */,
 				E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */,
@@ -470,14 +510,18 @@
 				E19FCAB52C2102D200732192 /* Font+Extensions.swift in Sources */,
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
 				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
+				E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
 				E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */,
+				E19FCACA2C24F1BC00732192 /* ChatView.swift in Sources */,
 				E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */,
 				E1B675762C149F82003D491D /* TabARouter.swift in Sources */,
+				E19FCAC62C24EFAA00732192 /* InboxNavigationProtocol.swift in Sources */,
 				E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */,
+				E19FCAC82C24F15F00732192 /* InboxView.swift in Sources */,
 				E19FCAB92C210D2300732192 /* TabBRouter.swift in Sources */,
 				E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */,
 				E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */,
@@ -487,7 +531,11 @@
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */,
 				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
+				E19FCACE2C2A34A100732192 /* TabDRouter.swift in Sources */,
+				E19FCAD02C2A352400732192 /* TabDView.swift in Sources */,
+				E19FCACC2C24F1DC00732192 /* TabC.swift in Sources */,
 				E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */,
+				E19FCAC42C24EF1F00732192 /* TabCRouter.swift in Sources */,
 				E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
