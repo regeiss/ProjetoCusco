@@ -33,6 +33,7 @@ struct ContentView: View
     }
 
     @Environment(AppRouter.self) private var appRouter
+    // Onboarding
 
     var body: some View
     {
@@ -45,6 +46,11 @@ struct ContentView: View
                 .environment(appRouter.tabARouter)
                 .tabItem {
                     Image(systemName: "a.circle")
+                }
+                .sheet(item: $appRouter.presentedSheet) {
+                    appRouter.presentedSheet = nil
+                } content: { presentedSheet in
+                    view(for: presentedSheet)
                 }
 
             TabB()
@@ -73,11 +79,6 @@ struct ContentView: View
                     view(for: presentedSheet)
                 }
         }
-        .onAppear
-        {
-            print("task    ======================")
-            DeeplinkManager.shared.userActivityPublisher.send(.chat)
-        }
         .environment(\.presentedSheet, $appRouter.presentedSheet)
         .environment(\.currentTab, $appRouter.selectedTab)
     }
@@ -88,6 +89,8 @@ struct ContentView: View
         {
         case .viewOne:
             ViewOne()
+        case .onBoarding:
+            OnBoardingView()
         case .transportation(let type):
             TransportationView(type: type)
         }

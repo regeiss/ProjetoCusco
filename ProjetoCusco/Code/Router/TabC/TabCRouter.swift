@@ -19,7 +19,7 @@ import SwiftUI
         }
     }
 
-    //Nested views
+    // Nested views
     @ObservationIgnored override var routerDestinationTypes: [any RouterDestination.Type] 
     {
         return [Destination.self, InboxDestination.self]

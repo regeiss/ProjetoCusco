@@ -6,12 +6,14 @@
 //
 
 import Foundation
-enum PresentedSheet: Identifiable 
+
+enum PresentedSheet: Identifiable
 {
     case viewOne
     case transportation(type: TransportationView.TransportationType)
+    case onBoarding
 
-    var id: String 
+    var id: String
     {
         return switch self 
         {
@@ -19,6 +21,8 @@ enum PresentedSheet: Identifiable
             "View one"
         case .transportation:
             "Transportation"
+        case .onBoarding:
+            "On Boarding"
         }
     }
 }

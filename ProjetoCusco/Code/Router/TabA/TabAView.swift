@@ -13,6 +13,7 @@ struct TabA: View
 
     private let navigationTitle = ContentView.Tab.taba.title
     @Environment(TabARouter.self) private var router
+    @Environment(\.presentedSheet) var presentedSheet
 
     // MARK: - Views
     var body: some View {
@@ -48,5 +49,6 @@ struct TabA: View
                     router.navigate(to: destination)
                 }
         }
+        .onAppear{ presentedSheet.wrappedValue = .onBoarding }
     }
 }

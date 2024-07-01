@@ -72,6 +72,13 @@
 		E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */; };
 		E1B675722C128145003D491D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B675712C128145003D491D /* Launch Screen.storyboard */; };
 		E1B675762C149F82003D491D /* TabARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675752C149F82003D491D /* TabARouter.swift */; };
+		E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */; };
+		E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED45742C2A5F5000B3D044 /* KeyChain.swift */; };
+		E1ED45782C2B81F800B3D044 /* WelcomeSheet in Frameworks */ = {isa = PBXBuildFile; productRef = E1ED45772C2B81F800B3D044 /* WelcomeSheet */; };
+		E1ED457C2C2B98C000B3D044 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED457B2C2B98C000B3D044 /* OnboardingData.swift */; };
+		E1ED457E2C2B991600B3D044 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED457D2C2B991600B3D044 /* OnBoardingView.swift */; };
+		E1ED45802C2B993900B3D044 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED457F2C2B993900B3D044 /* OnboardingTabView.swift */; };
+		E1ED45842C2B9B4C00B3D044 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED45832C2B9B4C00B3D044 /* OnboardingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +120,12 @@
 		E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		E1B675712C128145003D491D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E1B675752C149F82003D491D /* TabARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabARouter.swift; sourceTree = "<group>"; };
+		E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E1ED45742C2A5F5000B3D044 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		E1ED457B2C2B98C000B3D044 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		E1ED457D2C2B991600B3D044 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		E1ED457F2C2B993900B3D044 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
+		E1ED45832C2B9B4C00B3D044 /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +140,7 @@
 				E1B6751E2C0E8462003D491D /* FirebaseAnalytics in Frameworks */,
 				E1B675202C0E8462003D491D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				E1B675462C0E8462003D491D /* FirebaseMLModelDownloader in Frameworks */,
+				E1ED45782C2B81F800B3D044 /* WelcomeSheet in Frameworks */,
 				E1B6753A2C0E8462003D491D /* FirebaseFirestoreSwift in Frameworks */,
 				E1B675262C0E8462003D491D /* FirebaseAppCheck in Frameworks */,
 				E1B675242C0E8462003D491D /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
@@ -168,6 +182,7 @@
 		E19FCAA82C1A838D00732192 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -175,6 +190,10 @@
 		E19FCAA92C1BA6D800732192 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				E1ED45832C2B9B4C00B3D044 /* OnboardingButton.swift */,
+				E1ED457F2C2B993900B3D044 /* OnboardingTabView.swift */,
+				E1ED457D2C2B991600B3D044 /* OnBoardingView.swift */,
+				E1ED457B2C2B98C000B3D044 /* OnboardingData.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -270,11 +289,11 @@
 		E1B675142C0D33FC003D491D /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				E19FCAA92C1BA6D800732192 /* Onboarding */,
-				E19FCAA82C1A838D00732192 /* Themes */,
-				E1B6755B2C11294D003D491D /* Router */,
-				E19FCAA72C1A837300732192 /* Networking */,
 				E1B675152C0D3407003D491D /* Features */,
+				E19FCAA72C1A837300732192 /* Networking */,
+				E19FCAA92C1BA6D800732192 /* Onboarding */,
+				E1B6755B2C11294D003D491D /* Router */,
+				E19FCAA82C1A838D00732192 /* Themes */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -321,6 +340,7 @@
 		E1B6751B2C0D34A2003D491D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				E1ED45742C2A5F5000B3D044 /* KeyChain.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -420,6 +440,7 @@
 				E1B6754F2C0E8462003D491D /* FirebaseStorage */,
 				E1B675512C0E8462003D491D /* FirebaseStorageCombine-Community */,
 				E1B675532C0E8462003D491D /* FirebaseVertexAI-Preview */,
+				E1ED45772C2B81F800B3D044 /* WelcomeSheet */,
 			);
 			productName = ProjetoCusco;
 			productReference = E1B674FC2C0CAB25003D491D /* ProjetoCusco.app */;
@@ -453,6 +474,7 @@
 			mainGroup = E1B674F32C0CAB25003D491D;
 			packageReferences = (
 				E1B6751C2C0E8461003D491D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E1ED45762C2B81F800B3D044 /* XCRemoteSwiftPackageReference "Welcome-Sheet" */,
 			);
 			productRefGroup = E1B674FD2C0CAB25003D491D /* Products */;
 			projectDirPath = "";
@@ -511,12 +533,17 @@
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
 				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
 				E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */,
+				E1ED45842C2B9B4C00B3D044 /* OnboardingButton.swift in Sources */,
+				E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
+				E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */,
 				E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */,
+				E1ED457E2C2B991600B3D044 /* OnBoardingView.swift in Sources */,
 				E19FCACA2C24F1BC00732192 /* ChatView.swift in Sources */,
 				E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
+				E1ED457C2C2B98C000B3D044 /* OnboardingData.swift in Sources */,
 				E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */,
 				E1B675762C149F82003D491D /* TabARouter.swift in Sources */,
 				E19FCAC62C24EFAA00732192 /* InboxNavigationProtocol.swift in Sources */,
@@ -528,6 +555,7 @@
 				E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */,
 				E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
+				E1ED45802C2B993900B3D044 /* OnboardingTabView.swift in Sources */,
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */,
 				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
@@ -756,6 +784,14 @@
 				minimumVersion = 10.27.0;
 			};
 		};
+		E1ED45762C2B81F800B3D044 /* XCRemoteSwiftPackageReference "Welcome-Sheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MAJKFL/Welcome-Sheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -898,6 +934,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E1B6751C2C0E8461003D491D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		E1ED45772C2B81F800B3D044 /* WelcomeSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1ED45762C2B81F800B3D044 /* XCRemoteSwiftPackageReference "Welcome-Sheet" */;
+			productName = WelcomeSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
