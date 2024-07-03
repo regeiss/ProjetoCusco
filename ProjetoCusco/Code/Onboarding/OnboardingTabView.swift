@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingTabView: View
 {
     @Environment(\.dismiss) var dismiss
+    @AppStorage("needsAppOnboarding") var needsAppOnboarding: Bool?
+
     var data: OnboardingData
 
     @State private var isAnimating: Bool = false
@@ -48,6 +50,7 @@ struct OnboardingTabView: View
             Spacer()
             
             Button(action: {
+                needsAppOnboarding = false 
                 dismiss()
             }, label: {
                 Text("Comece aqui")

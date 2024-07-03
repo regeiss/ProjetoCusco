@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View
 {
+    @Environment(AppRouter.self) private var appRouter
+    @AppStorage("needsAppOnboarding") private var needsAppOnboarding: Bool = true
+
     enum Tab
     {
         case taba
@@ -31,9 +34,6 @@ struct ContentView: View
             }
         }
     }
-
-    @Environment(AppRouter.self) private var appRouter
-    // Onboarding
 
     var body: some View
     {

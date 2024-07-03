@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E188A9B52C34C4520031EC04 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9B42C34C4520031EC04 /* AppState.swift */; };
 		E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAA2C1F4F5400732192 /* NetworkError.swift */; };
 		E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */; };
 		E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAE2C1F99A500732192 /* NetworkManager.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E188A9B42C34C4520031EC04 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E19FCAAA2C1F4F5400732192 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		E19FCAAE2C1F99A500732192 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -168,6 +170,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E188A9B32C34C4450031EC04 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E188A9B42C34C4520031EC04 /* AppState.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		E19FCAA72C1A837300732192 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +299,7 @@
 		E1B675142C0D33FC003D491D /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				E188A9B32C34C4450031EC04 /* Base */,
 				E1B675152C0D3407003D491D /* Features */,
 				E19FCAA72C1A837300732192 /* Networking */,
 				E19FCAA92C1BA6D800732192 /* Onboarding */,
@@ -559,6 +570,7 @@
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */,
 				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
+				E188A9B52C34C4520031EC04 /* AppState.swift in Sources */,
 				E19FCACE2C2A34A100732192 /* TabDRouter.swift in Sources */,
 				E19FCAD02C2A352400732192 /* TabDView.swift in Sources */,
 				E19FCACC2C24F1DC00732192 /* TabC.swift in Sources */,

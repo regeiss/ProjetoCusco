@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TabA: View
 {
+    @AppStorage("needsAppOnboarding") var needsAppOnboarding = true
+
     typealias Destination = TabARouter.TabADestination
 
     private let navigationTitle = ContentView.Tab.taba.title
@@ -30,7 +32,7 @@ struct TabA: View
 
     @ViewBuilder private func navigationDestination(_ destination: Destination) -> some View
     {
-        switch destination 
+        switch destination
         {
         case .viewOne:
             ViewOne()
@@ -39,7 +41,7 @@ struct TabA: View
         }
     }
 
-    private var listView: some View 
+    private var listView: some View
     {
         List(Destination.allCases) { destination in
             Text(destination.title)
@@ -49,6 +51,10 @@ struct TabA: View
                     router.navigate(to: destination)
                 }
         }
-        .onAppear{ presentedSheet.wrappedValue = .onBoarding }
+        .onAppear{ if needsAppOnboarding {
+            presentedSheet.wrappedValue = .onBoarding}
+            else {
+                presentedSheet.wrappedValue = nil }
+        }
     }
 }

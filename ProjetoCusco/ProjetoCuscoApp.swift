@@ -23,11 +23,12 @@ struct ProjetoCuscoApp: App
             ContentView()
                 .environment(appRouter)
                 .onReceive(DeeplinkManager.shared.userActivityPublisher, perform: handleDeeplink)
+                .modifier(DarkModeViewModifier())
         }
     }
 
-    // MARK - Deeplinks
-    func handleDeeplink(_ type: DeeplinkManager.DeeplinkType) 
+    // MARK: - Deeplinks
+    func handleDeeplink(_ type: DeeplinkManager.DeeplinkType)
     {
         switch type 
         {
