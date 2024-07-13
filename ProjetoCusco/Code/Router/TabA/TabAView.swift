@@ -37,7 +37,7 @@ struct TabA: View
         case .viewOne:
             ViewOne()
         case .viewTwo:
-            ViewTwo()
+            AbrigoListaScreen()
         }
     }
 

@@ -1,7 +1,22 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Abrigo" : {
+
+    },
+    "Add" : {
+
+    },
+    "Cancelar" : {
+
+    },
     "Comece aqui" : {
+
+    },
+    "Detalhes" : {
+
+    },
+    "Feito" : {
 
     },
     "Go to chat" : {
@@ -28,6 +43,12 @@
       }
     },
     "Navigation items" : {
+
+    },
+    "Nome" : {
+
+    },
+    "Novo abrigo" : {
 
     },
     "Sheet items" : {

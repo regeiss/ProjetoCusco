@@ -1,5 +1,5 @@
 {
-  "originHash" : "f864ae703381225bfecf7f1e0de6a030b6f4c197b8e9880844be52116895ada4",
+  "originHash" : "72adc3bb1f466ec024cade795c65ea208539488f2c346ea75b3500f3b44dc0a6",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "3b62f154d00019ae29a71e9738800bb6f18b236d",
         "version" : "10.19.2"
+      }
+    },
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "587995f7d5cc667951d635fbf6b4252324ba0439",
+        "version" : "2.3.2"
       }
     },
     {
