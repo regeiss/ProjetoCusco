@@ -12,6 +12,7 @@ enum PresentedSheet: Identifiable
     case viewOne
     case transportation(type: TransportationView.TransportationType)
     case onBoarding
+    case settings
 
     var id: String
     {
@@ -23,6 +24,8 @@ enum PresentedSheet: Identifiable
             "Transportation"
         case .onBoarding:
             "On Boarding"
+        case .settings:
+            "Settings"
         }
     }
 }

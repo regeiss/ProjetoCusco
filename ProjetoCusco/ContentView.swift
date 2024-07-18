@@ -45,7 +45,7 @@ struct ContentView: View
                 .tag(Tab.taba)
                 .environment(appRouter.tabARouter)
                 .tabItem {
-                    Image(systemName: "a.circle")
+                    Image(systemName: "house")
                 }
                 .sheet(item: $appRouter.presentedSheet) {
                     appRouter.presentedSheet = nil
@@ -57,21 +57,21 @@ struct ContentView: View
                 .tag(Tab.tabb)
                 .environment(appRouter.tabBRouter)
                 .tabItem {
-                    Image(systemName: "b.circle")
+                    Image(systemName: "message")
                 }
 
             TabC()
                 .tag(Tab.tabc)
                 .environment(appRouter.tabCRouter)
                 .tabItem {
-                    Image(systemName: "c.circle")
+                    Image(systemName: "person")
                 }
 
             TabD()
                 .tag(Tab.tabd)
                 .environment(appRouter.tabDRouter)
                 .tabItem {
-                    Image(systemName: "d.circle")
+                    Image(systemName: "gear")
                 }
                 .sheet(item: $appRouter.presentedSheet) {
                     appRouter.presentedSheet = nil
@@ -93,6 +93,8 @@ struct ContentView: View
             OnBoardingView()
         case .transportation(let type):
             TransportationView(type: type)
+        case .settings:
+            SettingsScreen()
         }
     }
 }

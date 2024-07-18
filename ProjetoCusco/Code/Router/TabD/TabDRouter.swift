@@ -6,25 +6,32 @@
 //
 
 import Foundation
-@Observable class TabDRouter: BaseRouter {
-    enum Destination: String, RouterDestination {
+
+@Observable class TabDRouter: BaseRouter
+{
+    enum Destination: String, RouterDestination
+    {
         case subview = "Tab d subview"
         case inbox
     }
 
-    //Protocols
-    @ObservationIgnored override var routerDestinationTypes: [any RouterDestination.Type] {
+    // Protocols
+    @ObservationIgnored override var routerDestinationTypes: [any RouterDestination.Type]
+    {
         return [Destination.self, InboxDestination.self]
     }
 
     // MARK: - Public
-    func navigate(to destination: Destination) {
+    func navigate(to destination: Destination)
+    {
         path.append(destination)
     }
 }
 // MARK: - InboxRouterProtocol
-extension TabDRouter: InboxNavigationProtocol {
-    func navigate(to destination: InboxDestination) {
+extension TabDRouter: InboxNavigationProtocol
+{
+    func navigate(to destination: InboxDestination)
+    {
         path.append(destination)
     }
 }

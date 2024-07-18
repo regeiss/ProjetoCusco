@@ -13,15 +13,21 @@ struct AbrigoDetalheView: View
 
     var body: some View
     {
-        HStack
+        VStack(alignment: .leading)
         {
-            Image(systemName: abrigo.ativo ? "largecircle.fill.circle" : "circle")
-            .imageScale(.large)
-            .foregroundColor(.accentColor)
-            .onTapGesture {
-                abrigo.ativo.toggle()
-            }
             Text(abrigo.nome)
+
+            HStack
+            {
+                Text("ativo ")
+                Image(systemName: abrigo.ativo ? "largecircle.fill.circle" : "circle")
+                    .imageScale(.medium)
+                    .foregroundColor(.accentColor)
+                    .onTapGesture {
+                        abrigo.ativo.toggle()
+                    }
+                Spacer()
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
+import Factory
 
 @main
 struct ProjetoCuscoApp: App
@@ -45,9 +46,13 @@ struct ProjetoCuscoApp: App
 
 class AppDelegate: NSObject, UIApplicationDelegate
 {
+    @LazyInjected(\.authenticationService)
+    private var authenticationService
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool
     {
         FirebaseApp.configure()
+        authenticationService.signInAnonymously()
 
         let useEmulator = UserDefaults.standard.bool(forKey: "useEmulator")
         if useEmulator

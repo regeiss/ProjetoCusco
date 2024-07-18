@@ -28,30 +28,32 @@ public class AbrigoRepository: ObservableObject
 
     func subscribe()
     {
-        let query = Firestore.firestore().collection(Abrigo.collectionName)
-
-        listenerRegistration = query
-            .addSnapshotListener { [weak self] (querySnapshot, error) in
-                guard let documents = querySnapshot?.documents
-                else
-                {
-                    print("No documents")
-                    return
-                }
-
-                print("Mapping \(documents.count) documents")
-                self?.abrigo = documents.compactMap { queryDocumentSnapshot in
-                    do
+        if listenerRegistration == nil {
+            let query = Firestore.firestore().collection(Abrigo.collectionName)
+            
+            listenerRegistration = query
+                .addSnapshotListener { [weak self] (querySnapshot, error) in
+                    guard let documents = querySnapshot?.documents
+                    else
                     {
-                        return try queryDocumentSnapshot.data(as: Abrigo.self)
+                        print("No documents")
+                        return
                     }
-                    catch
-                    {
-                        print("Error while trying to map document \(queryDocumentSnapshot.documentID): \(error.localizedDescription)")
-                        return nil
+                    
+                    print("Mapping \(documents.count) documents")
+                    self?.abrigo = documents.compactMap { queryDocumentSnapshot in
+                        do
+                        {
+                            return try queryDocumentSnapshot.data(as: Abrigo.self)
+                        }
+                        catch
+                        {
+                            print("Error while trying to map document \(queryDocumentSnapshot.documentID): \(error.localizedDescription)")
+                            return nil
+                        }
                     }
                 }
-            }
+        }
     }
 
     private func unsubscribe()

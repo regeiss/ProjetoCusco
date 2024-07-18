@@ -4,7 +4,22 @@
     "Abrigo" : {
 
     },
+    "Account" : {
+
+    },
     "Add" : {
+
+    },
+    "Already have an account?" : {
+
+    },
+    "Anonymous / Guest user" : {
+
+    },
+    "ativo " : {
+
+    },
+    "Cancel" : {
 
     },
     "Cancelar" : {
@@ -13,10 +28,34 @@
     "Comece aqui" : {
 
     },
+    "Confirm password" : {
+
+    },
+    "Delete Account" : {
+
+    },
+    "Deleting your account is permanent. Do you want to delete your account?" : {
+
+    },
     "Detalhes" : {
 
     },
+    "Don't have an account yet?" : {
+
+    },
+    "Done" : {
+
+    },
+    "edit" : {
+
+    },
+    "Email" : {
+
+    },
     "Feito" : {
+
+    },
+    "Get your work done. Make it so." : {
 
     },
     "Go to chat" : {
@@ -42,7 +81,25 @@
         }
       }
     },
+    "Log in" : {
+
+    },
+    "Login" : {
+
+    },
+    "Make It So" : {
+
+    },
+    "More sign-in options" : {
+
+    },
+    "Name" : {
+
+    },
     "Navigation items" : {
+
+    },
+    "No" : {
 
     },
     "Nome" : {
@@ -51,7 +108,34 @@
     "Novo abrigo" : {
 
     },
+    "Password" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Provider" : {
+
+    },
+    "Settings" : {
+
+    },
     "Sheet items" : {
+
+    },
+    "Sign out" : {
+
+    },
+    "Sign up" : {
+
+    },
+    "UID" : {
+
+    },
+    "Verified" : {
+
+    },
+    "Yes" : {
 
     }
   },

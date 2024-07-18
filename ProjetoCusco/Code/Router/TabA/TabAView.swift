@@ -9,7 +9,17 @@ import SwiftUI
 
 struct TabA: View
 {
+    enum SheetItem: String, CaseIterable, Identifiable
+    {
+        case settings = "Settings"
+
+        var id: String {
+            return rawValue
+        }
+    }
+
     @AppStorage("needsAppOnboarding") var needsAppOnboarding = true
+    @State private var isSettingsScreenPresented = false
 
     typealias Destination = TabARouter.TabADestination
 
@@ -18,15 +28,25 @@ struct TabA: View
     @Environment(\.presentedSheet) var presentedSheet
 
     // MARK: - Views
-    var body: some View {
+    var body: some View
+    {
         @Bindable var router = router
 
-        NavigationStack(path: $router.path) {
+        NavigationStack(path: $router.path)
+        {
             listView
                 .routerDestination(router: router,
                                    navigationBackTitle: navigationTitle,
                                    destination: navigationDestination)
                 .navigationTitle(navigationTitle)
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button(action: { didSelectSheetItem() })
+                        {
+                            Image(systemName: "gearshape")
+                        }
+                    }
+                }
         }
     }
 
@@ -51,10 +71,26 @@ struct TabA: View
                     router.navigate(to: destination)
                 }
         }
-        .onAppear{ if needsAppOnboarding {
-            presentedSheet.wrappedValue = .onBoarding}
-            else {
-                presentedSheet.wrappedValue = nil }
+        .onAppear
+        {
+            if needsAppOnboarding
+            {
+                presentedSheet.wrappedValue = .onBoarding
+            }
+            else
+            {
+                presentedSheet.wrappedValue = nil
+            }
+        }
+        .sheet(isPresented: $isSettingsScreenPresented)
+        {
+            SettingsScreen()
         }
     }
+
+    private func didSelectSheetItem()
+    {
+        presentedSheet.wrappedValue = .settings
+    }
+
 }
