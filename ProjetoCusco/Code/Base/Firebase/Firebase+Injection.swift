@@ -12,7 +12,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 extension Container
-{
+{ 
     public var useEmulator: Factory<Bool>
     {
         Factory(self)

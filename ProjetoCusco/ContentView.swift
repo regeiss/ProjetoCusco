@@ -47,7 +47,7 @@ struct ContentView: View
                 .tabItem {
                     Image(systemName: "house")
                 }
-                .sheet(item: $appRouter.presentedSheet) {
+                .fullScreenCover(item: $appRouter.presentedSheet) {
                     appRouter.presentedSheet = nil
                 } content: { presentedSheet in
                     view(for: presentedSheet)

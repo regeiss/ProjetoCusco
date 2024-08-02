@@ -73,7 +73,7 @@ struct TabA: View
         }
         .onAppear
         {
-            if needsAppOnboarding
+            if !needsAppOnboarding
             {
                 presentedSheet.wrappedValue = .onBoarding
             }

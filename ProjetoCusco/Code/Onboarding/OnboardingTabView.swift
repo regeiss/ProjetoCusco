@@ -29,7 +29,7 @@ struct OnboardingTabView: View
                 Image(data.objectImage)
                     .resizable()
                     .scaledToFit()
-                    .offset(x: 0, y: 150)
+                    .offset(x: 0, y: 100)
                     .scaleEffect(isAnimating ? 1 : 0.9)
             }
             
@@ -60,13 +60,7 @@ struct OnboardingTabView: View
                     .padding(.vertical, 16)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
-                            .foregroundColor(
-                                Color(
-                                    red: 255 / 255,
-                                    green: 115 / 255,
-                                    blue: 115 / 255
-                                )
-                            )
+                            .foregroundColor( Color( red: 255 / 255, green: 115 / 255, blue: 115 / 255))
                     )
             })
             .shadow(radius: 10)

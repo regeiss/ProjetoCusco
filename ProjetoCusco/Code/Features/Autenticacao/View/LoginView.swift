@@ -110,9 +110,13 @@ struct LoginView: View {
       }
 
       SignInWithAppleButton(.signIn) { request in
-        // handle sign in requst
+        viewModel.handleSignInWithAppleRequest(request)
       } onCompletion: { result in
-        // handle completion
+        Task {
+          if await viewModel.handleSignInWithAppleCompletion(result) {
+            dismiss()
+          }
+        }
       }
       .signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
       .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
@@ -144,21 +148,7 @@ struct LoginView: View {
       .padding(.vertical, 8)
     }
     .padding()
-    //.analyticsScreen(name: "\(Self.self)")
+    // .analyticsScreen(name: "\(Self.self)")
   }
 }
 
-//struct LoginView_Previews: PreviewProvider {
-//  struct Container: View {
-//    @StateObject var viewModel = AuthenticationViewModel(flow: .login)
-//
-//    var body: some View {
-//      LoginView()
-//        .environmentObject(viewModel)
-//    }
-//  }
-//
-//  static var previews: some View {
-//    Container()
-//  }
-//}

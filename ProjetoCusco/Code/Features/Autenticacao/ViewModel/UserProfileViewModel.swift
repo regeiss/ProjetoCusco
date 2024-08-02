@@ -59,7 +59,8 @@ class UserProfileViewModel: ObservableObject
                 if let providerData = user?.providerData.first {
                     return providerData.providerID
                 }
-                else {
+                else
+                {
                     return user?.providerID
                 }
             }
@@ -67,11 +68,13 @@ class UserProfileViewModel: ObservableObject
 
     }
 
-    func deleteAccount() async -> Bool {
+    func deleteAccount() async -> Bool
+    {
         return await authenticationService.deleteAccount()
     }
 
-    func signOut() {
+    func signOut()
+    {
         authenticationService.signOut()
     }
 }

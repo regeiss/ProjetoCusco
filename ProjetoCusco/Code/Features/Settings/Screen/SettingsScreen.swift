@@ -24,12 +24,12 @@ struct SettingsScreen: View
                 {
                     NavigationLink(destination: UserProfileView()) 
                     {
-                        Label("Account", systemImage: "person.circle")
+                        Label("Conta", systemImage: "person.circle")
                     }
                 }
                 Section
                 {
-                    if viewModel.isGuestUser
+                    if !viewModel.isGuestUser
                     {
                         Button(action: signUp) 
                         {
@@ -70,7 +70,7 @@ struct SettingsScreen: View
                 {
                     Button(action: { dismiss() }) 
                     {
-                        Text("Done")
+                        Text("OK")
                     }
                 }
             }

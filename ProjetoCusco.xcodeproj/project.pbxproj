@@ -11,6 +11,7 @@
 		E12E4A102C4203BC00ADF27E /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E12E4A0F2C4203BC00ADF27E /* Factory */; };
 		E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */; };
 		E12E4A152C4206E800ADF27E /* Firebase+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A142C4206E800ADF27E /* Firebase+Injection.swift */; };
+		E15E8E052C585CD800284134 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E8E042C585CD800284134 /* CryptoUtils.swift */; };
 		E188A9B52C34C4520031EC04 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9B42C34C4520031EC04 /* AppState.swift */; };
 		E188A9B92C39883F0031EC04 /* AbrigoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9B82C39883F0031EC04 /* AbrigoRepository.swift */; };
 		E188A9BC2C398AD60031EC04 /* AbrigoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9BB2C398AD60031EC04 /* AbrigoModel.swift */; };
@@ -93,6 +94,7 @@
 		E1B960C22C45E3A900A234D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C12C45E3A900A234D1 /* LoginView.swift */; };
 		E1B960C42C45E3EA00A234D1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C32C45E3EA00A234D1 /* SignUpView.swift */; };
 		E1C75CE12C45F53500D50497 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */; };
+		E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */; };
 		E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */; };
 		E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED45742C2A5F5000B3D044 /* KeyChain.swift */; };
 		E1ED45782C2B81F800B3D044 /* WelcomeSheet in Frameworks */ = {isa = PBXBuildFile; productRef = E1ED45772C2B81F800B3D044 /* WelcomeSheet */; };
@@ -106,6 +108,8 @@
 		E12E4A0C2C3F553C00ADF27E /* AbrigoDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrigoDetalheView.swift; sourceTree = "<group>"; };
 		E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbrigoRepository+Injection.swift"; sourceTree = "<group>"; };
 		E12E4A142C4206E800ADF27E /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
+		E15E8E022C57E2D300284134 /* ProjetoCusco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjetoCusco.entitlements; sourceTree = "<group>"; };
+		E15E8E042C585CD800284134 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
 		E188A9B42C34C4520031EC04 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E188A9B82C39883F0031EC04 /* AbrigoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrigoRepository.swift; sourceTree = "<group>"; };
 		E188A9BB2C398AD60031EC04 /* AbrigoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrigoModel.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		E1B960C12C45E3A900A234D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E1B960C32C45E3EA00A234D1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
+		E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		E1ED45742C2A5F5000B3D044 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		E1ED457B2C2B98C000B3D044 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
@@ -218,9 +223,27 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
+		E15E8E032C585CBF00284134 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E15E8E042C585CD800284134 /* CryptoUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E15E8E062C592EA300284134 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		E188A9B32C34C4450031EC04 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E12E4A132C42069100ADF27E /* Firebase */,
+				E1B6755B2C11294D003D491D /* Router */,
 				E188A9B42C34C4520031EC04 /* AppState.swift */,
 			);
 			path = Base;
@@ -362,13 +385,13 @@
 		E1B674FE2C0CAB25003D491D /* ProjetoCusco */ = {
 			isa = PBXGroup;
 			children = (
-				E1B675172C0D3420003D491D /* Resources */,
+				E15E8E022C57E2D300284134 /* ProjetoCusco.entitlements */,
 				E1B675142C0D33FC003D491D /* Code */,
-				E1B675102C0CE6E7003D491D /* SupportingFiles */,
-				E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */,
 				E1B675012C0CAB25003D491D /* ContentView.swift */,
-				E1B675032C0CAB26003D491D /* Assets.xcassets */,
 				E1B675052C0CAB26003D491D /* Preview Content */,
+				E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */,
+				E1B675172C0D3420003D491D /* Resources */,
+				E1B675102C0CE6E7003D491D /* SupportingFiles */,
 			);
 			path = ProjetoCusco;
 			sourceTree = "<group>";
@@ -401,12 +424,10 @@
 		E1B675142C0D33FC003D491D /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				E12E4A132C42069100ADF27E /* Firebase */,
 				E188A9B32C34C4450031EC04 /* Base */,
 				E1B675152C0D3407003D491D /* Features */,
 				E19FCAA72C1A837300732192 /* Networking */,
 				E19FCAA92C1BA6D800732192 /* Onboarding */,
-				E1B6755B2C11294D003D491D /* Router */,
 				E19FCAA82C1A838D00732192 /* Themes */,
 			);
 			path = Code;
@@ -428,6 +449,7 @@
 		E1B675172C0D3420003D491D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B675032C0CAB26003D491D /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -442,6 +464,7 @@
 		E1B675192C0D3492003D491D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E15E8E062C592EA300284134 /* Screen */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -449,6 +472,7 @@
 		E1B6751A2C0D349A003D491D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E1C75CE22C4B217100D50497 /* Screen */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -456,11 +480,11 @@
 		E1B6751B2C0D34A2003D491D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				E1B960AA2C4494B800A234D1 /* ViewModel */,
-				E1B960A92C4493F400A234D1 /* View */,
-				E1B960A82C4493E900A234D1 /* Screen */,
-				E1B960A72C4493DD00A234D1 /* Model */,
 				E1ED45742C2A5F5000B3D044 /* KeyChain.swift */,
+				E1B960A72C4493DD00A234D1 /* Model */,
+				E1B960A82C4493E900A234D1 /* Screen */,
+				E1B960A92C4493F400A234D1 /* View */,
+				E1B960AA2C4494B800A234D1 /* ViewModel */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -517,6 +541,7 @@
 		E1B960A62C4493C300A234D1 /* Autenticacao */ = {
 			isa = PBXGroup;
 			children = (
+				E15E8E032C585CBF00284134 /* Utilities */,
 				E1B960BA2C45DE5800A234D1 /* Services */,
 				E1B960B72C45DB4700A234D1 /* Screen */,
 				E1B960B52C45DB2A00A234D1 /* View */,
@@ -590,6 +615,13 @@
 				E1B960BD2C45E1FD00A234D1 /* AuthenticationService+Injection.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E1C75CE22C4B217100D50497 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -737,6 +769,7 @@
 				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
 				E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */,
 				E1ED45842C2B9B4C00B3D044 /* OnboardingButton.swift in Sources */,
+				E15E8E052C585CD800284134 /* CryptoUtils.swift in Sources */,
 				E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
@@ -766,6 +799,7 @@
 				E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */,
 				E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */,
 				E12E4A152C4206E800ADF27E /* Firebase+Injection.swift in Sources */,
+				E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */,
 				E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */,
 				E12E4A0D2C3F553C00ADF27E /* AbrigoDetalheView.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
@@ -915,6 +949,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjetoCusco/ProjetoCusco.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjetoCusco/Preview Content\"";
@@ -928,6 +963,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -946,6 +982,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjetoCusco/ProjetoCusco.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjetoCusco/Preview Content\"";
@@ -959,6 +996,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
