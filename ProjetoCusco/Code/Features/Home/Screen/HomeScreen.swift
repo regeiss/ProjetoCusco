@@ -7,8 +7,36 @@
 
 import SwiftUI
 
-struct HomeScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct HomeScreen: View
+{
+    var body: some View
+    {
+        ZStack
+        {
+            Image("login")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .edgesIgnoringSafeArea(.top)
+           
+        }
+        Spacer()
+        VStack {
+            Button("Bordered Button") {
+                
+            }
+            .buttonStyle(.bordered)
+            .tint(.pink)
+            
+            Button("Bordered Prominent Button") {
+                
+            }
+            .buttonStyle(.borderedProminent)
+
+        }
+        .font(.title2)
     }
+}
+
+#Preview {
+    HomeScreen()
 }

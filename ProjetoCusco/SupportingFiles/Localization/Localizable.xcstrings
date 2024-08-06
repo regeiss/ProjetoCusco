@@ -4,6 +4,9 @@
     "Abrigo" : {
 
     },
+    "Account" : {
+
+    },
     "Add" : {
 
     },
@@ -14,6 +17,12 @@
 
     },
     "ativo " : {
+
+    },
+    "Bordered Button" : {
+
+    },
+    "Bordered Prominent Button" : {
 
     },
     "Cancel" : {
@@ -28,9 +37,6 @@
     "Confirm password" : {
 
     },
-    "Conta" : {
-
-    },
     "Delete Account" : {
 
     },
@@ -41,6 +47,9 @@
 
     },
     "Don't have an account yet?" : {
+
+    },
+    "Done" : {
 
     },
     "edit" : {
@@ -108,9 +117,6 @@
     "Novo abrigo" : {
 
     },
-    "OK" : {
-
-    },
     "Password" : {
 
     },
@@ -124,6 +130,9 @@
 
     },
     "Sheet items" : {
+
+    },
+    "Sign in with Google button." : {
 
     },
     "Sign out" : {
