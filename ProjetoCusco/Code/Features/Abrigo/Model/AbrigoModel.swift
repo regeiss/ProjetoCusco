@@ -14,7 +14,7 @@ struct Abrigo: Identifiable, Codable
     @DocumentID var id: String?
     var nome: String
     var ativo: Bool = true
-    var userId: String? = nil
+    var userId: String?
 }
 
 extension Abrigo

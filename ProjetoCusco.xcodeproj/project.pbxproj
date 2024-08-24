@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10260CE2C76AF98002EA5AD /* PetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260CD2C76AF98002EA5AD /* PetScreen.swift */; };
+		E10260D12C77D124002EA5AD /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = E10260D02C77D124002EA5AD /* SwiftfulRouting */; };
+		E10260D52C77D8BA002EA5AD /* MatchesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D42C77D8BA002EA5AD /* MatchesScreen.swift */; };
+		E10260D72C77EC6B002EA5AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D62C77EC6B002EA5AD /* HomeViewModel.swift */; };
+		E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */; };
+		E10260DB2C7900E8002EA5AD /* HomeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DA2C7900E8002EA5AD /* HomeTileView.swift */; };
+		E10260DD2C790301002EA5AD /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DC2C790301002EA5AD /* PetDetailView.swift */; };
 		E12E4A0D2C3F553C00ADF27E /* AbrigoDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A0C2C3F553C00ADF27E /* AbrigoDetalheView.swift */; };
 		E12E4A102C4203BC00ADF27E /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E12E4A0F2C4203BC00ADF27E /* Factory */; };
 		E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */; };
@@ -23,21 +30,8 @@
 		E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */; };
 		E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAAE2C1F99A500732192 /* NetworkManager.swift */; };
 		E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB02C1F9B5400732192 /* NetworkManager+Extensions.swift */; };
-		E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB22C2101DB00732192 /* ViewTabA.swift */; };
-		E19FCAB52C2102D200732192 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB42C2102D200732192 /* Font+Extensions.swift */; };
-		E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB62C2104AD00732192 /* Color+Extensions.swift */; };
-		E19FCAB92C210D2300732192 /* TabBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAB82C210D2300732192 /* TabBRouter.swift */; };
-		E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABB2C23ABE500732192 /* TabBView.swift */; };
-		E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABD2C23B3A500732192 /* TabAView.swift */; };
-		E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */; };
-		E19FCAC42C24EF1F00732192 /* TabCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC32C24EF1F00732192 /* TabCRouter.swift */; };
-		E19FCAC62C24EFAA00732192 /* InboxNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */; };
-		E19FCAC82C24F15F00732192 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC72C24F15F00732192 /* InboxView.swift */; };
-		E19FCACA2C24F1BC00732192 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAC92C24F1BC00732192 /* ChatView.swift */; };
-		E19FCACC2C24F1DC00732192 /* TabC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACB2C24F1DC00732192 /* TabC.swift */; };
-		E19FCACE2C2A34A100732192 /* TabDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACD2C2A34A100732192 /* TabDRouter.swift */; };
-		E19FCAD02C2A352400732192 /* TabDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCACF2C2A352400732192 /* TabDView.swift */; };
-		E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FCAD12C2A436800732192 /* DeeplinkManager.swift */; };
+		E1A522582C7519D900E19242 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A522572C7519D900E19242 /* HomeModel.swift */; };
+		E1A5225A2C75589C00E19242 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A522592C75589C00E19242 /* HomeRepository.swift */; };
 		E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */; };
 		E1B675022C0CAB25003D491D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675012C0CAB25003D491D /* ContentView.swift */; };
 		E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B675032C0CAB26003D491D /* Assets.xcassets */; };
@@ -74,16 +68,7 @@
 		E1B675542C0E8462003D491D /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = E1B675532C0E8462003D491D /* FirebaseVertexAI-Preview */; };
 		E1B675582C0FD9DC003D491D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */; };
 		E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1B675592C0FE2CB003D491D /* .gitignore */; };
-		E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6755C2C11295F003D491D /* AppRouter.swift */; };
-		E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */; };
-		E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675612C126F0E003D491D /* BaseRouter.swift */; };
-		E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675632C126FC1003D491D /* RouterDestination.swift */; };
-		E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */; };
-		E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */; };
-		E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6756B2C12790F003D491D /* View+Extensions.swift */; };
-		E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */; };
 		E1B675722C128145003D491D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B675712C128145003D491D /* Launch Screen.storyboard */; };
-		E1B675762C149F82003D491D /* TabARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B675752C149F82003D491D /* TabARouter.swift */; };
 		E1B960AC2C4494C000A234D1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960AB2C4494C000A234D1 /* SettingsViewModel.swift */; };
 		E1B960AE2C4494E600A234D1 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960AD2C4494E600A234D1 /* SettingsScreen.swift */; };
 		E1B960B02C4495A000A234D1 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960AF2C4495A000A234D1 /* AuthenticationView.swift */; };
@@ -96,7 +81,6 @@
 		E1B960C42C45E3EA00A234D1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C32C45E3EA00A234D1 /* SignUpView.swift */; };
 		E1C75CE12C45F53500D50497 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */; };
 		E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */; };
-		E1E6B4AE2C5E721500916E6E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6B4AD2C5E721500916E6E /* SwiftUIView.swift */; };
 		E1E6B4B12C5E7CD400916E6E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E1E6B4B02C5E7CD400916E6E /* GoogleSignIn */; };
 		E1E6B4B32C5E7CD400916E6E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1E6B4B22C5E7CD400916E6E /* GoogleSignInSwift */; };
 		E1E6B4B52C5E83B600916E6E /* GoogleSIgnIn.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6B4B42C5E83B600916E6E /* GoogleSIgnIn.xcassets */; };
@@ -110,6 +94,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10260CD2C76AF98002EA5AD /* PetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetScreen.swift; sourceTree = "<group>"; };
+		E10260D42C77D8BA002EA5AD /* MatchesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScreen.swift; sourceTree = "<group>"; };
+		E10260D62C77EC6B002EA5AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegate.swift; sourceTree = "<group>"; };
+		E10260DA2C7900E8002EA5AD /* HomeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileView.swift; sourceTree = "<group>"; };
+		E10260DC2C790301002EA5AD /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
 		E12E4A0C2C3F553C00ADF27E /* AbrigoDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrigoDetalheView.swift; sourceTree = "<group>"; };
 		E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbrigoRepository+Injection.swift"; sourceTree = "<group>"; };
 		E12E4A142C4206E800ADF27E /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
@@ -126,21 +116,8 @@
 		E19FCAAC2C1F4FC800732192 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		E19FCAAE2C1F99A500732192 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E19FCAB02C1F9B5400732192 /* NetworkManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Extensions.swift"; sourceTree = "<group>"; };
-		E19FCAB22C2101DB00732192 /* ViewTabA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabA.swift; sourceTree = "<group>"; };
-		E19FCAB42C2102D200732192 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
-		E19FCAB62C2104AD00732192 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
-		E19FCAB82C210D2300732192 /* TabBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBRouter.swift; sourceTree = "<group>"; };
-		E19FCABB2C23ABE500732192 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
-		E19FCABD2C23B3A500732192 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
-		E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheet.swift; sourceTree = "<group>"; };
-		E19FCAC32C24EF1F00732192 /* TabCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCRouter.swift; sourceTree = "<group>"; };
-		E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxNavigationProtocol.swift; sourceTree = "<group>"; };
-		E19FCAC72C24F15F00732192 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
-		E19FCAC92C24F1BC00732192 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		E19FCACB2C24F1DC00732192 /* TabC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabC.swift; sourceTree = "<group>"; };
-		E19FCACD2C2A34A100732192 /* TabDRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDRouter.swift; sourceTree = "<group>"; };
-		E19FCACF2C2A352400732192 /* TabDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDView.swift; sourceTree = "<group>"; };
-		E19FCAD12C2A436800732192 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		E1A522572C7519D900E19242 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		E1A522592C75589C00E19242 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		E1B674FC2C0CAB25003D491D /* ProjetoCusco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoCusco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B674FF2C0CAB25003D491D /* ProjetoCuscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoCuscoApp.swift; sourceTree = "<group>"; };
 		E1B675012C0CAB25003D491D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,16 +127,7 @@
 		E1B675122C0CE75E003D491D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B675592C0FE2CB003D491D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		E1B6755C2C11295F003D491D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extensions.swift"; sourceTree = "<group>"; };
-		E1B675612C126F0E003D491D /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		E1B675632C126FC1003D491D /* RouterDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestination.swift; sourceTree = "<group>"; };
-		E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestinationDecoder.swift; sourceTree = "<group>"; };
-		E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extensions.swift"; sourceTree = "<group>"; };
-		E1B6756B2C12790F003D491D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		E1B675712C128145003D491D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		E1B675752C149F82003D491D /* TabARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabARouter.swift; sourceTree = "<group>"; };
 		E1B960AB2C4494C000A234D1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		E1B960AD2C4494E600A234D1 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		E1B960AF2C4495A000A234D1 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -172,7 +140,6 @@
 		E1B960C32C45E3EA00A234D1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
 		E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		E1E6B4AD2C5E721500916E6E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		E1E6B4B42C5E83B600916E6E /* GoogleSIgnIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoogleSIgnIn.xcassets; sourceTree = "<group>"; };
 		E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		E1ED45742C2A5F5000B3D044 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
@@ -188,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B675302C0E8462003D491D /* FirebaseDatabase in Frameworks */,
+				E10260D12C77D124002EA5AD /* SwiftfulRouting in Frameworks */,
 				E1B6753E2C0E8462003D491D /* FirebaseFunctionsCombine-Community in Frameworks */,
 				E1B675362C0E8462003D491D /* FirebaseFirestore in Frameworks */,
 				E1E6B4B32C5E7CD400916E6E /* GoogleSignInSwift in Frameworks */,
@@ -225,6 +193,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E10260D22C77D5FE002EA5AD /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				E10260D32C77D8A9002EA5AD /* Screens */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		E10260D32C77D8A9002EA5AD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E10260D42C77D8BA002EA5AD /* MatchesScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		E12E4A132C42069100ADF27E /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */,
-				E1E6B4AD2C5E721500916E6E /* SwiftUIView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -254,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				E12E4A132C42069100ADF27E /* Firebase */,
-				E1B6755B2C11294D003D491D /* Router */,
 				E188A9B42C34C4520031EC04 /* AppState.swift */,
 			);
 			path = Base;
@@ -344,34 +326,86 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		E19FCABA2C23ABAA00732192 /* TabB */ = {
+		E1A5224C2C74035C00E19242 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E19FCAB82C210D2300732192 /* TabBRouter.swift */,
-				E19FCABB2C23ABE500732192 /* TabBView.swift */,
+				E1A522572C7519D900E19242 /* HomeModel.swift */,
 			);
-			path = TabB;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		E19FCAC12C24EE8700732192 /* TabC */ = {
+		E1A5224D2C74036800E19242 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				E19FCAC92C24F1BC00732192 /* ChatView.swift */,
-				E19FCAC52C24EFAA00732192 /* InboxNavigationProtocol.swift */,
-				E19FCAC72C24F15F00732192 /* InboxView.swift */,
-				E19FCACB2C24F1DC00732192 /* TabC.swift */,
-				E19FCAC32C24EF1F00732192 /* TabCRouter.swift */,
+				E1A522592C75589C00E19242 /* HomeRepository.swift */,
 			);
-			path = TabC;
+			path = Repository;
 			sourceTree = "<group>";
 		};
-		E19FCAC22C24EE9000732192 /* TabD */ = {
+		E1A5224E2C74037E00E19242 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E19FCACF2C2A352400732192 /* TabDView.swift */,
-				E19FCACD2C2A34A100732192 /* TabDRouter.swift */,
+				E10260DA2C7900E8002EA5AD /* HomeTileView.swift */,
 			);
-			path = TabD;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1A5224F2C74038C00E19242 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E10260D62C77EC6B002EA5AD /* HomeViewModel.swift */,
+				E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1A522502C74051300E19242 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				E1A522512C74051C00E19242 /* Model */,
+				E1A522552C74054B00E19242 /* Repository */,
+				E1A522522C74052C00E19242 /* Screen */,
+				E1A522542C74054100E19242 /* View */,
+				E1A522532C74053400E19242 /* ViewModel */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		E1A522512C74051C00E19242 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1A522522C74052C00E19242 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E10260CD2C76AF98002EA5AD /* PetScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E1A522532C74053400E19242 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1A522542C74054100E19242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E10260DC2C790301002EA5AD /* PetDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1A522552C74054B00E19242 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		E1B674F32C0CAB25003D491D = {
@@ -447,11 +481,13 @@
 		E1B675152C0D3407003D491D /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				E1B960A62C4493C300A234D1 /* Autenticacao */,
 				E188A9B72C3980DA0031EC04 /* Abrigo */,
+				E1B960A62C4493C300A234D1 /* Autenticacao */,
 				E1B675182C0D3481003D491D /* Common */,
 				E1B675192C0D3492003D491D /* Home */,
 				E1B6751A2C0D349A003D491D /* Login */,
+				E10260D22C77D5FE002EA5AD /* Matches */,
+				E1A522502C74051300E19242 /* Pet */,
 				E1B6751B2C0D34A2003D491D /* Settings */,
 			);
 			path = Features;
@@ -476,7 +512,11 @@
 		E1B675192C0D3492003D491D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E1A5224C2C74035C00E19242 /* Model */,
+				E1A5224D2C74036800E19242 /* Repository */,
 				E15E8E062C592EA300284134 /* Screen */,
+				E1A5224E2C74037E00E19242 /* View */,
+				E1A5224F2C74038C00E19242 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -499,55 +539,6 @@
 				E1B960AA2C4494B800A234D1 /* ViewModel */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		E1B6755B2C11294D003D491D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				E1B6755C2C11295F003D491D /* AppRouter.swift */,
-				E1B675732C149E0C003D491D /* Base */,
-				E1B6755E2C11335C003D491D /* Extensions */,
-				E1B675742C149E16003D491D /* TabA */,
-				E19FCABA2C23ABAA00732192 /* TabB */,
-				E19FCAC12C24EE8700732192 /* TabC */,
-				E19FCAC22C24EE9000732192 /* TabD */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		E1B6755E2C11335C003D491D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E1B6756D2C127A98003D491D /* CGFloat+Extensions.swift */,
-				E1B675672C1271B7003D491D /* CodingUserInfoKey+Extensions.swift */,
-				E1B6755F2C11337B003D491D /* EnvironmentValues+Extensions.swift */,
-				E19FCAB42C2102D200732192 /* Font+Extensions.swift */,
-				E1B6756B2C12790F003D491D /* View+Extensions.swift */,
-				E19FCAB62C2104AD00732192 /* Color+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E1B675732C149E0C003D491D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				E1B675612C126F0E003D491D /* BaseRouter.swift */,
-				E19FCAD12C2A436800732192 /* DeeplinkManager.swift */,
-				E19FCABF2C23B9AF00732192 /* PresentedSheet.swift */,
-				E1B675632C126FC1003D491D /* RouterDestination.swift */,
-				E1B675652C12714A003D491D /* RouterDestinationDecoder.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		E1B675742C149E16003D491D /* TabA */ = {
-			isa = PBXGroup;
-			children = (
-				E1B675752C149F82003D491D /* TabARouter.swift */,
-				E19FCAB22C2101DB00732192 /* ViewTabA.swift */,
-				E19FCABD2C23B3A500732192 /* TabAView.swift */,
-			);
-			path = TabA;
 			sourceTree = "<group>";
 		};
 		E1B960A62C4493C300A234D1 /* Autenticacao */ = {
@@ -687,6 +678,7 @@
 				E12E4A0F2C4203BC00ADF27E /* Factory */,
 				E1E6B4B02C5E7CD400916E6E /* GoogleSignIn */,
 				E1E6B4B22C5E7CD400916E6E /* GoogleSignInSwift */,
+				E10260D02C77D124002EA5AD /* SwiftfulRouting */,
 			);
 			productName = ProjetoCusco;
 			productReference = E1B674FC2C0CAB25003D491D /* ProjetoCusco.app */;
@@ -723,6 +715,7 @@
 				E1ED45762C2B81F800B3D044 /* XCRemoteSwiftPackageReference "Welcome-Sheet" */,
 				E12E4A0E2C4203BC00ADF27E /* XCRemoteSwiftPackageReference "Factory" */,
 				E1E6B4AF2C5E7CD400916E6E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				E10260CF2C77D124002EA5AD /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			productRefGroup = E1B674FD2C0CAB25003D491D /* Products */;
 			projectDirPath = "";
@@ -778,66 +771,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10260DD2C790301002EA5AD /* PetDetailView.swift in Sources */,
 				E1B960B22C449F4100A234D1 /* UserProfileView.swift in Sources */,
-				E19FCAB52C2102D200732192 /* Font+Extensions.swift in Sources */,
 				E1B960AC2C4494C000A234D1 /* SettingsViewModel.swift in Sources */,
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
+				E10260D72C77EC6B002EA5AD /* HomeViewModel.swift in Sources */,
 				E1B960B92C45DE0C00A234D1 /* AuthenticationViewModel.swift in Sources */,
-				E1B6756E2C127A98003D491D /* CGFloat+Extensions.swift in Sources */,
-				E19FCAD22C2A436800732192 /* DeeplinkManager.swift in Sources */,
 				E1ED45842C2B9B4C00B3D044 /* OnboardingButton.swift in Sources */,
-				E1E6B4AE2C5E721500916E6E /* SwiftUIView.swift in Sources */,
+				E10260D52C77D8BA002EA5AD /* MatchesScreen.swift in Sources */,
 				E15E8E052C585CD800284134 /* CryptoUtils.swift in Sources */,
+				E1A522582C7519D900E19242 /* HomeModel.swift in Sources */,
 				E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
 				E1B960BC2C45E19B00A234D1 /* AuthenticationService.swift in Sources */,
 				E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */,
-				E19FCABC2C23ABE500732192 /* TabBView.swift in Sources */,
 				E1ED457E2C2B991600B3D044 /* OnBoardingView.swift in Sources */,
-				E19FCACA2C24F1BC00732192 /* ChatView.swift in Sources */,
 				E1B960C42C45E3EA00A234D1 /* SignUpView.swift in Sources */,
-				E1B675682C1271B7003D491D /* CodingUserInfoKey+Extensions.swift in Sources */,
 				E1B960B02C4495A000A234D1 /* AuthenticationView.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */,
 				E1ED457C2C2B98C000B3D044 /* OnboardingData.swift in Sources */,
-				E1B675602C11337B003D491D /* EnvironmentValues+Extensions.swift in Sources */,
 				E188A9C32C3B0FFA0031EC04 /* AbrigoListaScreen.swift in Sources */,
 				E1B960C22C45E3A900A234D1 /* LoginView.swift in Sources */,
 				E188A9BF2C3996520031EC04 /* AbrigoViewModel.swift in Sources */,
-				E1B675762C149F82003D491D /* TabARouter.swift in Sources */,
+				E1A5225A2C75589C00E19242 /* HomeRepository.swift in Sources */,
 				E14F81F32C6055D8008D1D46 /* LoginScreen.swift in Sources */,
-				E19FCAC62C24EFAA00732192 /* InboxNavigationProtocol.swift in Sources */,
-				E1B675622C126F0E003D491D /* BaseRouter.swift in Sources */,
-				E19FCAC82C24F15F00732192 /* InboxView.swift in Sources */,
-				E19FCAB92C210D2300732192 /* TabBRouter.swift in Sources */,
 				E188A9B92C39883F0031EC04 /* AbrigoRepository.swift in Sources */,
-				E19FCAC02C23B9AF00732192 /* PresentedSheet.swift in Sources */,
 				E1C75CE12C45F53500D50497 /* GoogleSignInButtonView.swift in Sources */,
-				E1B675662C12714A003D491D /* RouterDestinationDecoder.swift in Sources */,
-				E19FCAB72C2104AD00732192 /* Color+Extensions.swift in Sources */,
 				E12E4A152C4206E800ADF27E /* Firebase+Injection.swift in Sources */,
 				E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */,
-				E19FCABE2C23B3A500732192 /* TabAView.swift in Sources */,
 				E12E4A0D2C3F553C00ADF27E /* AbrigoDetalheView.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
 				E1ED45802C2B993900B3D044 /* OnboardingTabView.swift in Sources */,
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E1B960B42C45D6C600A234D1 /* UserProfileViewModel.swift in Sources */,
-				E19FCAB32C2101DB00732192 /* ViewTabA.swift in Sources */,
-				E1B6755D2C11295F003D491D /* AppRouter.swift in Sources */,
+				E10260CE2C76AF98002EA5AD /* PetScreen.swift in Sources */,
 				E188A9B52C34C4520031EC04 /* AppState.swift in Sources */,
-				E19FCACE2C2A34A100732192 /* TabDRouter.swift in Sources */,
-				E19FCAD02C2A352400732192 /* TabDView.swift in Sources */,
-				E19FCACC2C24F1DC00732192 /* TabC.swift in Sources */,
 				E1B960BE2C45E1FD00A234D1 /* AuthenticationService+Injection.swift in Sources */,
+				E10260DB2C7900E8002EA5AD /* HomeTileView.swift in Sources */,
 				E188A9BC2C398AD60031EC04 /* AbrigoModel.swift in Sources */,
+				E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */,
 				E188A9C52C3CAB780031EC04 /* AbrigoAddEditView.swift in Sources */,
 				E1B960AE2C4494E600A234D1 /* SettingsScreen.swift in Sources */,
-				E1B6756C2C12790F003D491D /* View+Extensions.swift in Sources */,
-				E19FCAC42C24EF1F00732192 /* TabCRouter.swift in Sources */,
-				E1B675642C126FC1003D491D /* RouterDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,6 +1029,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E10260CF2C77D124002EA5AD /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
 		E12E4A0E2C4203BC00ADF27E /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -1088,6 +1072,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E10260D02C77D124002EA5AD /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E10260CF2C77D124002EA5AD /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
 		E12E4A0F2C4203BC00ADF27E /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E12E4A0E2C4203BC00ADF27E /* XCRemoteSwiftPackageReference "Factory" */;

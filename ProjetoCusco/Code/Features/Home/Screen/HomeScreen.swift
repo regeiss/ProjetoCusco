@@ -6,37 +6,35 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
 struct HomeScreen: View
 {
+    @Environment(\.router) var router
+    @AppStorage("needsAppOnboarding") var needsAppOnboarding = true
+    @State private var isSettingsScreenPresented = false
+    
+    private var data = Pet.samples
+    
+    private let flexibleColumn = [
+        GridItem(.flexible(minimum: 100, maximum: 185), spacing: 5),
+        GridItem(.flexible(minimum: 100, maximum: 185), spacing: 5)
+    ]
+    
     var body: some View
     {
-        ZStack
-        {
-            Image("login")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .edgesIgnoringSafeArea(.top)
-           
-        }
-        Spacer()
-        VStack {
-            Button("Bordered Button") {
-                
-            }
-            .buttonStyle(.bordered)
-            .tint(.pink)
+        RouterView { _ in
             
-            Button("Bordered Prominent Button") {
-                
-            }
-            .buttonStyle(.borderedProminent)
-
+            ScrollView
+            {
+                LazyVGrid(columns: flexibleColumn, spacing: 5)
+                {
+                    ForEach(data) { pet in
+                        HomeTileView(pet: pet)
+                    }
+                }
+            }.navigationTitle("Home")
+             .navigationBarTitleDisplayMode(.large)
         }
-        .font(.title2)
     }
-}
-
-#Preview {
-    HomeScreen()
 }

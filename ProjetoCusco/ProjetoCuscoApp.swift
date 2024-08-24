@@ -15,33 +15,18 @@ import Factory
 struct ProjetoCuscoApp: App
 {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @Bindable private var appRouter = AppRouter()
 
     var body: some Scene
     {
         WindowGroup
         {
             ContentView()
-                .environment(appRouter)
-                .onReceive(DeeplinkManager.shared.userActivityPublisher, perform: handleDeeplink)
                 .modifier(DarkModeViewModifier())
         }
     }
 
     // MARK: - Deeplinks
-    func handleDeeplink(_ type: DeeplinkManager.DeeplinkType)
-    {
-        switch type 
-        {
-        case .chat:
-            appRouter.presentedSheet = nil
-            appRouter.selectedTab = .tabc
-            appRouter.tabCRouter.navigate(to: .inbox)
-            appRouter.tabCRouter.navigate(to: .chat)
-        case .transportation(let type):
-            appRouter.presentedSheet = .transportation(type: type)
-        }
-    }
+   
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate

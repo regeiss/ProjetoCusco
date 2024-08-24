@@ -6,95 +6,57 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
+
+enum Tabs: String, CaseIterable
+{
+    case home
+    case matches
+    case profile
+    case pets
+    case settings
+}
 
 struct ContentView: View
 {
-    @Environment(AppRouter.self) private var appRouter
     @AppStorage("needsAppOnboarding") private var needsAppOnboarding: Bool = true
-
-    enum Tab
-    {
-        case taba
-        case tabb
-        case tabc
-        case tabd
-
-        var title: String
-        {
-            return switch self
-            {
-            case .taba:
-                "Tab A"
-            case .tabb:
-                "Tab B"
-            case .tabc:
-                "Tab C"
-            case .tabd:
-                "Tab D"
-            }
-        }
-    }
-
+    @State private var selectedTab: Tabs = .home
+    
     var body: some View
     {
-        @Bindable var appRouter = appRouter
-
-        TabView(selection: $appRouter.selectedTab)
+        TabView(selection: $selectedTab)
         {
-            TabA()
-                .tag(Tab.taba)
-                .environment(appRouter.tabARouter)
+            HomeScreen()
+                .tag(Tabs.home)
                 .tabItem {
                     Image(systemName: "house")
                 }
-                .fullScreenCover(item: $appRouter.presentedSheet) {
-                    appRouter.presentedSheet = nil
-                } content: { presentedSheet in
-                    view(for: presentedSheet)
-                }
-
-            TabB()
-                .tag(Tab.tabb)
-                .environment(appRouter.tabBRouter)
+            
+            PetScreen()
+                .tag(Tabs.pets)
                 .tabItem {
-                    Image(systemName: "message")
+                    Image(systemName: "dog.fill")
                 }
-
-            TabC()
-                .tag(Tab.tabc)
-                .environment(appRouter.tabCRouter)
+            
+            MatchesScreen()
+                .tag(Tabs.matches)
+                .tabItem {
+                    Image(systemName: "arrow.right.and.line.vertical.and.arrow.left")
+                }
+            
+            UserProfileView()
+                .tag(Tabs.profile)
                 .tabItem {
                     Image(systemName: "person")
                 }
-
-            TabD()
-                .tag(Tab.tabd)
-                .environment(appRouter.tabDRouter)
+            
+            SettingsScreen()
+                .tag(Tabs.settings)
                 .tabItem {
                     Image(systemName: "gear")
                 }
-                .sheet(item: $appRouter.presentedSheet) {
-                    appRouter.presentedSheet = nil
-                } content: { presentedSheet in
-                    view(for: presentedSheet)
-                }
-        }
-        .environment(\.presentedSheet, $appRouter.presentedSheet)
-        .environment(\.currentTab, $appRouter.selectedTab)
-    }
-
-    @ViewBuilder private func view(for presentedSheet: PresentedSheet) -> some View 
-    {
-        switch presentedSheet 
-        {
-        case .viewOne:
-            ViewOne()
-        case .onBoarding:
-            OnBoardingView()
-        case .transportation(let type):
-            TransportationView(type: type)
-        case .settings:
-            SettingsScreen()
-        }
+        }.toolbarBackground(.indigo, for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+            .toolbarColorScheme(.dark, for: .tabBar)
     }
 }
