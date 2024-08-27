@@ -9,6 +9,8 @@ import SwiftUI
 import Combine
 import AuthenticationServices
 import FirebaseAnalyticsSwift
+import GoogleSignIn
+import GoogleSignInSwift
 
 private enum FocusableField: Hashable
 {
@@ -133,7 +135,7 @@ struct SignupView: View
 
             Spacer()
 
-            GoogleSignInButton(.signUp)
+            GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .dark, style: .wide, state: .normal))
             {
                 // sign in with Google
             }

@@ -84,6 +84,9 @@
     "Hello, World!" : {
 
     },
+    "Home" : {
+
+    },
     "Log in" : {
 
     },
@@ -118,6 +121,9 @@
 
     },
     "Settings" : {
+
+    },
+    "Sign in with Google" : {
 
     },
     "Sign out" : {

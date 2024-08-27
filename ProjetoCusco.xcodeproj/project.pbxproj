@@ -66,7 +66,6 @@
 		E1B675502C0E8462003D491D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B6754F2C0E8462003D491D /* FirebaseStorage */; };
 		E1B675522C0E8462003D491D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E1B675512C0E8462003D491D /* FirebaseStorageCombine-Community */; };
 		E1B675542C0E8462003D491D /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = E1B675532C0E8462003D491D /* FirebaseVertexAI-Preview */; };
-		E1B675582C0FD9DC003D491D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */; };
 		E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E1B675592C0FE2CB003D491D /* .gitignore */; };
 		E1B675722C128145003D491D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B675712C128145003D491D /* Launch Screen.storyboard */; };
 		E1B960AC2C4494C000A234D1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960AB2C4494C000A234D1 /* SettingsViewModel.swift */; };
@@ -79,6 +78,7 @@
 		E1B960BE2C45E1FD00A234D1 /* AuthenticationService+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960BD2C45E1FD00A234D1 /* AuthenticationService+Injection.swift */; };
 		E1B960C22C45E3A900A234D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C12C45E3A900A234D1 /* LoginView.swift */; };
 		E1B960C42C45E3EA00A234D1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C32C45E3EA00A234D1 /* SignUpView.swift */; };
+		E1C41D982C7CEA2D006DD686 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1C41D972C7CEA2D006DD686 /* GoogleService-Info.plist */; };
 		E1C75CE12C45F53500D50497 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */; };
 		E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */; };
 		E1E6B4B12C5E7CD400916E6E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E1E6B4B02C5E7CD400916E6E /* GoogleSignIn */; };
@@ -125,7 +125,6 @@
 		E1B675062C0CAB26003D491D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1B6750E2C0CB05B003D491D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		E1B675122C0CE75E003D491D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1B675592C0FE2CB003D491D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E1B675712C128145003D491D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E1B960AB2C4494C000A234D1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +137,8 @@
 		E1B960BD2C45E1FD00A234D1 /* AuthenticationService+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Injection.swift"; sourceTree = "<group>"; };
 		E1B960C12C45E3A900A234D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E1B960C32C45E3EA00A234D1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E1C41D962C7CE8B4006DD686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E1C41D972C7CEA2D006DD686 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1C75CE02C45F53500D50497 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
 		E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E1E6B4B42C5E83B600916E6E /* GoogleSIgnIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoogleSIgnIn.xcassets; sourceTree = "<group>"; };
@@ -411,7 +412,7 @@
 		E1B674F32C0CAB25003D491D = {
 			isa = PBXGroup;
 			children = (
-				E1B675572C0FD9DC003D491D /* GoogleService-Info.plist */,
+				E1C41D972C7CEA2D006DD686 /* GoogleService-Info.plist */,
 				E1B675592C0FE2CB003D491D /* .gitignore */,
 				E1B6750E2C0CB05B003D491D /* .swiftlint.yml */,
 				E1B674FE2C0CAB25003D491D /* ProjetoCusco */,
@@ -430,6 +431,7 @@
 		E1B674FE2C0CAB25003D491D /* ProjetoCusco */ = {
 			isa = PBXGroup;
 			children = (
+				E1C41D962C7CE8B4006DD686 /* Info.plist */,
 				E15E8E022C57E2D300284134 /* ProjetoCusco.entitlements */,
 				E1B675142C0D33FC003D491D /* Code */,
 				E1B675012C0CAB25003D491D /* ContentView.swift */,
@@ -732,8 +734,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B6750F2C0CB05B003D491D /* .swiftlint.yml in Resources */,
+				E1C41D982C7CEA2D006DD686 /* GoogleService-Info.plist in Resources */,
 				E1B675072C0CAB26003D491D /* Preview Assets.xcassets in Resources */,
-				E1B675582C0FD9DC003D491D /* GoogleService-Info.plist in Resources */,
 				E1B675132C0CE75E003D491D /* Localizable.xcstrings in Resources */,
 				E1B6755A2C0FE2CB003D491D /* .gitignore in Resources */,
 				E1B675042C0CAB26003D491D /* Assets.xcassets in Resources */,
@@ -952,6 +954,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoCusco/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -985,6 +988,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoCusco/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

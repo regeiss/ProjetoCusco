@@ -9,22 +9,29 @@ import SwiftUI
 import Combine
 import FirebaseAnalyticsSwift
 import AuthenticationServices
+import GoogleSignIn
+import GoogleSignInSwift
 
-private enum FocusableField: Hashable {
+private enum FocusableField: Hashable
+{
     case email
     case password
 }
 
-struct LoginView: View {
+struct LoginView: View
+{
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.dismiss) var dismiss
     
     @FocusState private var focus: FocusableField?
     
-    var emailPasswordSignInArea: some View {
-        VStack {
-            HStack {
+    var emailPasswordSignInArea: some View
+    {
+        VStack
+        {
+            HStack
+            {
                 Image(systemName: "at")
                 TextField("Email", text: $viewModel.email)
                     .textInputAutocapitalization(.never)
@@ -39,7 +46,8 @@ struct LoginView: View {
             .background(Divider(), alignment: .bottom)
             .padding(.bottom, 4)
             
-            HStack {
+            HStack
+            {
                 Image(systemName: "lock")
                 SecureField("Password", text: $viewModel.password)
                     .focused($focus, equals: .password)
@@ -52,20 +60,25 @@ struct LoginView: View {
             .background(Divider(), alignment: .bottom)
             .padding(.bottom, 8)
             
-            if !viewModel.errorMessage.isEmpty {
-                VStack {
+            if !viewModel.errorMessage.isEmpty
+            {
+                VStack
+                {
                     Text(viewModel.errorMessage)
                         .foregroundColor(Color(UIColor.systemRed))
                 }
             }
             
-            Button(action: { /* sign in with email and password */ } ) {
-                if viewModel.authenticationState != .authenticating {
+            Button(action: { /* sign in with email and password */ } )
+            {
+                if viewModel.authenticationState != .authenticating
+                {
                     Text("Login")
                         .padding(.vertical, 8)
                         .frame(maxWidth: .infinity)
                 }
-                else {
+                else
+                {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
                         .padding(.vertical, 8)
@@ -78,12 +91,15 @@ struct LoginView: View {
         }
     }
     
-    var body: some View {
-        VStack {
-            HStack {
+    var body: some View
+    {
+        VStack
+        {
+            HStack
+            {
                 Image(colorScheme == .light ? "logo-light" : "logo-dark")
                     .resizable()
-                    .frame(width: 30, height: 30 , alignment: .center)
+                    .frame(width: 30, height: 30, alignment: .center)
                     .cornerRadius(8)
                 Text("Make It So")
                     .font(.title)
@@ -91,7 +107,8 @@ struct LoginView: View {
             }
             .padding(.horizontal)
             
-            VStack {
+            VStack
+            {
                 Image(colorScheme == .light ? "auth-hero-light" : "auth-hero-dark")
                     .resizable()
                     .frame(maxWidth: .infinity)
@@ -105,9 +122,19 @@ struct LoginView: View {
             
             Spacer()
             
-            GoogleSignInButton(.signIn) {
-                // sign in with Google
+            Button(action: signInWithGoogle)
+            {
+                Text("Sign in with Google")
+                    .padding(.vertical, 8)
+                    .frame(maxWidth: .infinity)
+                    .background(alignment: .leading) {
+                        Image("Google")
+                            .frame(width: 30, alignment: .center)
+                    }
             }
+            .foregroundColor(colorScheme == .dark ? .white : .black)
+            .buttonStyle(.bordered)
+            
             
             SignInWithAppleButton(.signIn) { request in
                 viewModel.handleSignInWithAppleRequest(request)
@@ -149,5 +176,16 @@ struct LoginView: View {
         }
         .padding()
         // .analyticsScreen(name: "\(Self.self)")
+    }
+    
+    private func signInWithGoogle()
+    {
+        Task
+        {
+            if await viewModel.signInWithGoogle() == true
+            {
+                dismiss()
+            }
+        }
     }
 }
