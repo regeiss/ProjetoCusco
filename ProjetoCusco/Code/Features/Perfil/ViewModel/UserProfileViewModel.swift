@@ -22,7 +22,7 @@ class UserProfileViewModel: ObservableObject
     @Published var provider = ""
     @Published var displayName = ""
     @Published var email = ""
-
+    @Published var photoURL: URL?
     @Published var isGuestUser = false
     @Published var isVerified = false
 
@@ -53,7 +53,7 @@ class UserProfileViewModel: ObservableObject
                 user?.email ?? "N/A"
             }
             .assign(to: &$email)
-
+        
         $user
             .compactMap { user in
                 if let providerData = user?.providerData.first {

@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct AuthenticationView: View
+struct AuthenticationScreen: View
 {
     @StateObject var viewModel = AuthenticationViewModel()
 
@@ -19,10 +19,10 @@ struct AuthenticationView: View
             switch viewModel.flow
             {
             case .login:
-                LoginView()
+                LoginScreen()
                     .environmentObject(viewModel)
             case .signUp:
-                SignupView()
+                SignupScreen()
                     .environmentObject(viewModel)
             }
         }

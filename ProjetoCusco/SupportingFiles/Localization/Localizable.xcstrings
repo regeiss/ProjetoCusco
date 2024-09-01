@@ -4,13 +4,13 @@
     "Abrigo" : {
 
     },
-    "Account" : {
-
-    },
     "Add" : {
 
     },
-    "Already have an account?" : {
+    "Adote um pet." : {
+
+    },
+    "Ajustes" : {
 
     },
     "Anonymous / Guest user" : {
@@ -31,10 +31,10 @@
     "Comece aqui" : {
 
     },
-    "Confirm password" : {
+    "Cusco" : {
 
     },
-    "Cusco" : {
+    "Cusco App" : {
 
     },
     "Delete Account" : {
@@ -46,22 +46,13 @@
     "Detalhes" : {
 
     },
-    "Don't have an account yet?" : {
-
-    },
-    "Done" : {
-
-    },
-    "edit" : {
-
-    },
     "Email" : {
 
     },
-    "Feito" : {
+    "Entrar com o Google" : {
 
     },
-    "Get your work done. Make it so." : {
+    "Feito" : {
 
     },
     "Hello, cusco!" : {
@@ -87,19 +78,22 @@
     "Home" : {
 
     },
+    "Inscreva-se" : {
+
+    },
+    "Já tem uma conta?" : {
+
+    },
     "Log in" : {
 
     },
     "Login" : {
 
     },
-    "Make It So" : {
-
-    },
-    "More sign-in options" : {
-
-    },
     "Name" : {
+
+    },
+    "Não tem uma conta ainda?" : {
 
     },
     "No" : {
@@ -111,25 +105,22 @@
     "Novo abrigo" : {
 
     },
-    "Password" : {
+    "Perfil" : {
 
     },
     "Profile" : {
 
     },
+    "Pronto" : {
+
+    },
     "Provider" : {
 
     },
-    "Settings" : {
-
-    },
-    "Sign in with Google" : {
+    "Sair" : {
 
     },
     "Sign out" : {
-
-    },
-    "Sign up" : {
 
     },
     "UID" : {

@@ -20,37 +20,46 @@ public class AuthenticationService
     private var authStateHandler: AuthStateDidChangeListenerHandle?
     private var currentNonce: String?
     
-    init() {
+    init()
+    {
         registerAuthStateHandler()
         signInAnonymously()
     }
     
-    func registerAuthStateHandler() {
-        if authStateHandler == nil {
+    func registerAuthStateHandler()
+    {
+        if authStateHandler == nil
+        {
             authStateHandler = auth.addStateDidChangeListener { auth, user in
                 self.user = user
             }
         }
     }
     
-    func signOut() {
-        do {
+    func signOut()
+    {
+        do
+        {
             try auth.signOut()
             signInAnonymously()
         }
-        catch {
+        catch
+        {
             print("Error while trying to sign out: \(error.localizedDescription)")
             errorMessage = error.localizedDescription
         }
     }
     
-    func deleteAccount() async -> Bool {
-        do {
+    func deleteAccount() async -> Bool
+    {
+        do
+        {
             try await user?.delete()
             signOut()
             return true
         }
-        catch {
+        catch
+        {
             errorMessage = error.localizedDescription
             return false
         }
@@ -59,23 +68,31 @@ public class AuthenticationService
 
 // MARK: - Sign in anonymously
 
-extension AuthenticationService {
-    func signInAnonymously() {
-        if auth.currentUser == nil {
+extension AuthenticationService
+{
+    func signInAnonymously()
+    {
+        if auth.currentUser == nil
+        {
             print("Nobody is signed in. Trying to sign in anonymously.")
-            Task {
-                do {
+            Task
+            {
+                do
+                {
                     try await auth.signInAnonymously()
                     errorMessage = ""
                 }
-                catch {
+                catch
+                {
                     print("Error when trying to sign in anonymously: \(error.localizedDescription)")
                     errorMessage = error.localizedDescription
                 }
             }
         }
-        else {
-            if let user = auth.currentUser {
+        else
+        {
+            if let user = auth.currentUser
+            {
                 print("Someone is signed in with \(user.providerID) and user ID \(user.uid)")
             }
         }

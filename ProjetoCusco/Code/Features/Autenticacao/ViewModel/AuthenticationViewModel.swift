@@ -63,16 +63,11 @@ class AuthenticationViewModel: ObservableObject
     
     private var cancellables = Set<AnyCancellable>()
     
-    init(flow: AuthenticationFlow = .signUp)
+    init()
     {
-        self.flow = flow
-        
-        $flow
-            .combineLatest($email, $password, $confirmPassword)
-            .map { flow, email, password, confirmPassword in
-                flow == .login
-                ? !(email.isEmpty || password.isEmpty)
-                : !(email.isEmpty || password.isEmpty || confirmPassword.isEmpty)
+        $email
+            .map { email in
+                !email.isEmpty
             }
             .assign(to: &$isValid)
         
@@ -95,12 +90,28 @@ class AuthenticationViewModel: ObservableObject
             .assign(to: &$displayName)
     }
     
-    func switchFlow() {
+    private var authStateHandler: AuthStateDidChangeListenerHandle?
+    
+    func registerAuthStateHandler()
+    {
+        if authStateHandler == nil
+        {
+            authStateHandler = Auth.auth().addStateDidChangeListener { auth, user in
+                self.user = user
+                self.authenticationState = user == nil ? .unauthenticated : .authenticated
+                self.displayName = user?.email ?? ""
+            }
+        }
+    }
+    
+    func switchFlow()
+    {
         flow = flow == .login ? .signUp : .login
         errorMessage = ""
     }
     
-    func reset() {
+    func reset()
+    {
         flow = .login
         email = ""
         password = ""
@@ -108,20 +119,19 @@ class AuthenticationViewModel: ObservableObject
     }
     
     // MARK: - Account Deletion
-    
-    func deleteAccount() async -> Bool {
+    func deleteAccount() async -> Bool
+    {
         return await authenticationService.deleteAccount()
     }
     
     // MARK: - Signing out
-    
-    func signOut() {
+    func signOut()
+    {
         authenticationService.signOut()
     }
 }
 
 // MARK: - Sign in with Apple
-
 extension AuthenticationViewModel
 {
     func handleSignInWithAppleRequest(_ request: ASAuthorizationAppleIDRequest)
@@ -135,6 +145,7 @@ extension AuthenticationViewModel
     }
 }
 
+// MARK: - Sign in with Google
 extension AuthenticationViewModel
 {
     func signInWithGoogle() async -> Bool
@@ -182,43 +193,56 @@ extension AuthenticationViewModel
     }
 }
 
-extension AuthenticationViewModel {
-  func sendSignInLink() async {
-    let actionCodeSettings = ActionCodeSettings()
-    actionCodeSettings.handleCodeInApp = true
-    actionCodeSettings.url = URL(string: "https://favourites.page.link/email-link-login")
-
-    do {
-      try await Auth.auth().sendSignInLink(toEmail: email, actionCodeSettings: actionCodeSettings)
-      emailLink = email
+extension AuthenticationViewModel
+{
+    func sendSignInLink() async
+    {
+        let actionCodeSettings = ActionCodeSettings()
+        actionCodeSettings.handleCodeInApp = true
+        actionCodeSettings.url = URL(string: "https://favourites.page.link/email-link-login")
+        
+        do
+        {
+            try await Auth.auth().sendSignInLink(toEmail: email, actionCodeSettings: actionCodeSettings)
+            emailLink = email
+        }
+        catch
+        {
+            print(error.localizedDescription)
+            errorMessage = error.localizedDescription
+        }
     }
-    catch {
-      print(error.localizedDescription)
-      errorMessage = error.localizedDescription
+    
+    var emailLinkStatus: EmailLinkStatus
+    {
+        emailLink == nil ? .none : .pending
     }
-  }
-
-  var emailLinkStatus: EmailLinkStatus {
-    emailLink == nil ? .none : .pending
-  }
-
-  func handleSignInLink(_ url: URL) async {
-    guard let email = emailLink else {
-      errorMessage = "Invalid email address. Most likely, the link you used has expired. Try signing in again."
-      return
+    
+    func handleSignInLink(_ url: URL) async
+    {
+        guard let email = emailLink
+        else
+        {
+            errorMessage = "Invalid email address. Most likely, the link you used has expired. Try signing in again."
+            return
+        }
+        
+        let link = url.absoluteString
+        
+        if Auth.auth().isSignIn(withEmailLink: link)
+        {
+            do
+            {
+                let result = try await Auth.auth().signIn(withEmail: email, link: link)
+                let user = result.user
+                print("User \(user.uid) signed in with email \(user.email ?? "(unknown)"). The email is \(user.isEmailVerified ? "" : "NOT") verified")
+                emailLink = nil
+            }
+            catch
+            {
+                print(error.localizedDescription)
+                self.errorMessage = error.localizedDescription
+            }
+        }
     }
-    let link = url.absoluteString
-    if Auth.auth().isSignIn(withEmailLink: link) {
-      do {
-        let result = try await Auth.auth().signIn(withEmail: email, link: link)
-        let user = result.user
-        print("User \(user.uid) signed in with email \(user.email ?? "(unknown)"). The email is \(user.isEmailVerified ? "" : "NOT") verified")
-        emailLink = nil
-      }
-      catch {
-        print(error.localizedDescription)
-        self.errorMessage = error.localizedDescription
-      }
-    }
-  }
 }
