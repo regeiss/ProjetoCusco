@@ -32,7 +32,7 @@ struct ContentView: View
                     Image(systemName: "house")
                 }
             
-            PetScreen()
+            PetListaScreen()
                 .tag(Tabs.pets)
                 .tabItem {
                     Image(systemName: "dog.fill")
@@ -43,17 +43,16 @@ struct ContentView: View
                 .tabItem {
                     Image(systemName: "arrow.right.and.line.vertical.and.arrow.left")
                 }
+            AbrigoListaScreen()
+                .tag(Tabs.settings)
+                .tabItem {
+                    Image(systemName: "map")
+                }
             
             UserProfileView()
                 .tag(Tabs.profile)
                 .tabItem {
                     Image(systemName: "person")
-                }
-            
-            SettingsScreen()
-                .tag(Tabs.settings)
-                .tabItem {
-                    Image(systemName: "gear")
                 }
         }.toolbarBackground(.indigo, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)

@@ -25,9 +25,9 @@ extension Abrigo
 extension Abrigo 
 {
   static let samples = [
-    Abrigo(id: "1", nome: "Build sample app", ativo: true),
-    Abrigo(id: "2", nome: "Create tutorial"),
-    Abrigo(id: "3", nome: "???"),
-    Abrigo(id: "4", nome: "PROFIT!")
+    Abrigo(id: "1", nome: "********", ativo: true),
+    Abrigo(id: "2", nome: "************", ativo: false),
+    Abrigo(id: "3", nome: "**", ativo: true),
+    Abrigo(id: "4", nome: "********************", ativo: true)
   ]
 }

@@ -22,49 +22,52 @@ struct EmailLoginButtonView: View
     
     var body: some View
     {
-        HStack
+        VStack
         {
-            Image(systemName: "at")
-            TextField("Email", text: $viewModel.email)
-                .keyboardType(.emailAddress)
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
-                .focused($focus, equals: .email)
-                .onSubmit {
-                    signInWithEmailLink()
+            HStack
+            {
+                Image(systemName: "at")
+                TextField("Email", text: $viewModel.email)
+                    .keyboardType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                    .disableAutocorrection(true)
+                    .focused($focus, equals: .email)
+                    .onSubmit {
+                        signInWithEmailLink()
+                    }
+            }
+            .padding(.bottom, 12)
+            
+            if !viewModel.errorMessage.isEmpty
+            {
+                VStack
+                {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(Color(UIColor.systemRed))
                 }
-        }
-        .padding()
-        .background(Divider(), alignment: .bottom)
-        
-        if !viewModel.errorMessage.isEmpty
-        {
-            VStack
+            }
+            
+            Button(action: signInWithEmailLink)
             {
-                Text(viewModel.errorMessage)
-                    .foregroundColor(Color(UIColor.systemRed))
+                if viewModel.authenticationState != .authenticating
+                {
+                    Text("Registre-se")
+                        .padding()
+                        .frame(maxWidth: .infinity, maxHeight: 44)
+                }
+                else
+                {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                }
             }
+            .disabled(!viewModel.isValid)
+            .frame(maxWidth: .infinity)
+            .buttonStyle(.primary)
         }
-        
-        Button(action: signInWithEmailLink)
-        {
-            if viewModel.authenticationState != .authenticating {
-                Text("Login")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-            }
-            else
-            {
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                    .padding()
-                    .frame(maxWidth: .infinity)
-            }
-        }
-        .disabled(!viewModel.isValid)
-        .frame(maxWidth: .infinity)
-        .buttonStyle(.bordered)
-        .padding()
+        .padding([.leading, .trailing], 22)
     }
     
     private func signInWithEmailLink()
@@ -77,6 +80,12 @@ struct EmailLoginButtonView: View
     }
 }
 
-#Preview {
-    EmailLoginButtonView()
+#Preview
+{
+    Group
+    {
+        EmailLoginButtonView()
+            .preferredColorScheme(.light)
+    }
+    .environmentObject(AuthenticationViewModel())
 }

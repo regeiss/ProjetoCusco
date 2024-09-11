@@ -12,17 +12,32 @@ struct HomeTileView: View
     @Environment(\.router) var router
     @State var pet: Pet
     
-    var body: some View {
-        Text(String(pet.nome))
-            .frame(width: 185, height: 185, alignment: .center)
-            .background(.blue)
+    var body: some View
+    {
+        ZStack(alignment: .bottomTrailing)
+        {
+            AsyncImage(url: URL(string: pet.imageURLString ?? ""))
+            { result in
+                result.image?
+                    .resizable()
+                    .scaledToFill()
+            }
+            .frame(width: 195, height: 195, alignment: .center)
             .cornerRadius(10)
-            .foregroundColor(.white)
-            .font(.title)
             .onTapGesture {
                 router.showScreen(.push) { _ in
-                    PetDetailView(pet: pet)
+                    PetDetalheView(pet: $pet)
                 }
             }
+            
+            Text(String(pet.nome))
+                .background(.ultraThinMaterial)
+                .cornerRadius(3)
+                .foregroundColor(.white)
+                .font(.headline)
+                .offset(x: -5, y: -5)
+                .allowsHitTesting(false)
+                
+        }
     }
 }

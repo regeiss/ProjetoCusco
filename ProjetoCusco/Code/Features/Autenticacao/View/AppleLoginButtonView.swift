@@ -27,13 +27,13 @@ struct AppleLoginButtonView: View
                 }
             }
         }
-        //.signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
-        .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 70)
+        .signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
+        .frame(maxWidth: 350, minHeight: 54, maxHeight: 54)
         .cornerRadius(8)
-        .padding()
+        .padding([.leading, .trailing, .top], 22)
     }
 }
 
-#Preview {
-    AppleLoginButtonView()
-}
+//#Preview {
+//    AppleLoginButtonView()
+//}

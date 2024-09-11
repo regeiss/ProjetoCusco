@@ -17,17 +17,16 @@ struct GoogleLoginButtonView: View
         Button(action: signInWithGoogle)
         {
             Text("Entrar com o Google")
-                .padding(.vertical, 8)
-                .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
+                // .padding(.vertical, 1)
+                .frame(maxWidth: .infinity, maxHeight: 44)
                 .background(alignment: .leading) {
                     Image(colorScheme == .dark ? "ios_dark_sq_na" : "ios_light_sq_na")
-                        .frame(width: 30, alignment: .center)
                 }
         }
         .foregroundColor(colorScheme == .dark ? .white : .black)
-        .buttonStyle(.bordered)
-        .padding()
-        
+        .buttonStyle(.primary)
+        // .frame(maxWidth: 350, minHeight: 54, maxHeight: 54)
+        .padding([.leading, .trailing, .bottom], 12)
     }
     
     private func signInWithGoogle()
@@ -43,5 +42,11 @@ struct GoogleLoginButtonView: View
 }
 
 #Preview {
-    GoogleLoginButtonView()
+    Group
+    {
+        GoogleLoginButtonView()
+            .preferredColorScheme(.light)
+    }
+    .environmentObject(AuthenticationViewModel())
+  
 }

@@ -33,10 +33,6 @@ struct SignupScreen: View
         {
             HStack
             {
-                Image(colorScheme == .light ? "logo-light" : "logo-dark")
-                    .resizable()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .cornerRadius(8)
                 Text("Cusco App")
                     .font(.title)
                     .bold()
@@ -63,7 +59,7 @@ struct SignupScreen: View
             HStack
             {
                 Text("Já tem uma conta?")
-                Button(action: { viewModel.switchFlow() })
+                Button(action: { viewModel.switchFlow()})
                 {
                     Text("Log in")
                         .fontWeight(.semibold)
@@ -75,16 +71,14 @@ struct SignupScreen: View
         .padding()
         // .analyticsScreen(name: "\(Self.self)")
     }
-    
-    // MARK: - Funcs
-    
-    
-    private func signInWithEmailLink()
+}
+
+#Preview
+{
+    Group
     {
-        Task
-        {
-            await viewModel.sendSignInLink()
-            dismiss()
-        }
+        SignupScreen()
+            .preferredColorScheme(.light)
     }
+    .environmentObject(AuthenticationViewModel())
 }

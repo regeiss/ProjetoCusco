@@ -13,7 +13,15 @@
 		E10260D72C77EC6B002EA5AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D62C77EC6B002EA5AD /* HomeViewModel.swift */; };
 		E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */; };
 		E10260DB2C7900E8002EA5AD /* HomeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DA2C7900E8002EA5AD /* HomeTileView.swift */; };
-		E10260DD2C790301002EA5AD /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DC2C790301002EA5AD /* PetDetailView.swift */; };
+		E10260DD2C790301002EA5AD /* PetDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DC2C790301002EA5AD /* PetDetalheView.swift */; };
+		E123040D2C91D2AE009C5F01 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123040C2C91D2AE009C5F01 /* PetModel.swift */; };
+		E123040F2C91D5E6009C5F01 /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123040E2C91D5E6009C5F01 /* PetRepository.swift */; };
+		E12304112C91D7B0009C5F01 /* PetRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304102C91D7B0009C5F01 /* PetRepository+Injection.swift */; };
+		E12304132C91EB99009C5F01 /* PetListaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304122C91EB99009C5F01 /* PetListaScreen.swift */; };
+		E12304152C91F03E009C5F01 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304142C91F03E009C5F01 /* PetViewModel.swift */; };
+		E12304172C91F1CA009C5F01 /* PetAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304162C91F1CA009C5F01 /* PetAddEditView.swift */; };
+		E12304192C91FC2C009C5F01 /* PetImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304182C91FC2C009C5F01 /* PetImageLoader.swift */; };
+		E123041B2C920232009C5F01 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123041A2C920232009C5F01 /* PhotoModel.swift */; };
 		E12E4A0D2C3F553C00ADF27E /* AbrigoDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A0C2C3F553C00ADF27E /* AbrigoDetalheView.swift */; };
 		E12E4A102C4203BC00ADF27E /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E12E4A0F2C4203BC00ADF27E /* Factory */; };
 		E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */; };
@@ -21,6 +29,7 @@
 		E154990F2C826CB8002A3A99 /* GoogleLogInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154990E2C826CB8002A3A99 /* GoogleLogInButtonView.swift */; };
 		E15499172C836ED1002A3A99 /* AppleLoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15499162C836ED1002A3A99 /* AppleLoginButtonView.swift */; };
 		E15499192C83EC31002A3A99 /* EmailLoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15499182C83EC31002A3A99 /* EmailLoginButtonView.swift */; };
+		E154991B2C85344B002A3A99 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E154991A2C85344B002A3A99 /* PrimaryButtonStyle.swift */; };
 		E15E8E052C585CD800284134 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15E8E042C585CD800284134 /* CryptoUtils.swift */; };
 		E188A9B52C34C4520031EC04 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9B42C34C4520031EC04 /* AppState.swift */; };
 		E188A9B92C39883F0031EC04 /* AbrigoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188A9B82C39883F0031EC04 /* AbrigoRepository.swift */; };
@@ -100,13 +109,22 @@
 		E10260D62C77EC6B002EA5AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegate.swift; sourceTree = "<group>"; };
 		E10260DA2C7900E8002EA5AD /* HomeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileView.swift; sourceTree = "<group>"; };
-		E10260DC2C790301002EA5AD /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		E10260DC2C790301002EA5AD /* PetDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetalheView.swift; sourceTree = "<group>"; };
+		E123040C2C91D2AE009C5F01 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		E123040E2C91D5E6009C5F01 /* PetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
+		E12304102C91D7B0009C5F01 /* PetRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetRepository+Injection.swift"; sourceTree = "<group>"; };
+		E12304122C91EB99009C5F01 /* PetListaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListaScreen.swift; sourceTree = "<group>"; };
+		E12304142C91F03E009C5F01 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		E12304162C91F1CA009C5F01 /* PetAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAddEditView.swift; sourceTree = "<group>"; };
+		E12304182C91FC2C009C5F01 /* PetImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetImageLoader.swift; sourceTree = "<group>"; };
+		E123041A2C920232009C5F01 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		E12E4A0C2C3F553C00ADF27E /* AbrigoDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrigoDetalheView.swift; sourceTree = "<group>"; };
 		E12E4A112C4204D600ADF27E /* AbrigoRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbrigoRepository+Injection.swift"; sourceTree = "<group>"; };
 		E12E4A142C4206E800ADF27E /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
 		E154990E2C826CB8002A3A99 /* GoogleLogInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogInButtonView.swift; sourceTree = "<group>"; };
 		E15499162C836ED1002A3A99 /* AppleLoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginButtonView.swift; sourceTree = "<group>"; };
 		E15499182C83EC31002A3A99 /* EmailLoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginButtonView.swift; sourceTree = "<group>"; };
+		E154991A2C85344B002A3A99 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		E15E8E022C57E2D300284134 /* ProjetoCusco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjetoCusco.entitlements; sourceTree = "<group>"; };
 		E15E8E042C585CD800284134 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
 		E188A9B42C34C4520031EC04 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -314,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */,
+				E154991A2C85344B002A3A99 /* PrimaryButtonStyle.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -377,6 +396,8 @@
 		E1A522512C74051C00E19242 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E123040C2C91D2AE009C5F01 /* PetModel.swift */,
+				E123041A2C920232009C5F01 /* PhotoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				E10260CD2C76AF98002EA5AD /* PetScreen.swift */,
+				E12304122C91EB99009C5F01 /* PetListaScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -392,6 +414,8 @@
 		E1A522532C74053400E19242 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E12304142C91F03E009C5F01 /* PetViewModel.swift */,
+				E12304182C91FC2C009C5F01 /* PetImageLoader.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -399,7 +423,8 @@
 		E1A522542C74054100E19242 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E10260DC2C790301002EA5AD /* PetDetailView.swift */,
+				E10260DC2C790301002EA5AD /* PetDetalheView.swift */,
+				E12304162C91F1CA009C5F01 /* PetAddEditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +432,8 @@
 		E1A522552C74054B00E19242 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				E123040E2C91D5E6009C5F01 /* PetRepository.swift */,
+				E12304102C91D7B0009C5F01 /* PetRepository+Injection.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -518,7 +545,6 @@
 				E1B675152C0D3407003D491D /* Features */,
 				E19FCAA72C1A837300732192 /* Networking */,
 				E19FCAA92C1BA6D800732192 /* Onboarding */,
-				E19FCAA82C1A838D00732192 /* Themes */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -550,6 +576,7 @@
 		E1B675182C0D3481003D491D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E19FCAA82C1A838D00732192 /* Themes */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -800,11 +827,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10260DD2C790301002EA5AD /* PetDetailView.swift in Sources */,
+				E10260DD2C790301002EA5AD /* PetDetalheView.swift in Sources */,
 				E1B960B22C449F4100A234D1 /* UserProfileView.swift in Sources */,
 				E1B960AC2C4494C000A234D1 /* SettingsViewModel.swift in Sources */,
+				E123040D2C91D2AE009C5F01 /* PetModel.swift in Sources */,
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
 				E10260D72C77EC6B002EA5AD /* HomeViewModel.swift in Sources */,
+				E123040F2C91D5E6009C5F01 /* PetRepository.swift in Sources */,
 				E1B960B92C45DE0C00A234D1 /* AuthenticationViewModel.swift in Sources */,
 				E1ED45842C2B9B4C00B3D044 /* OnboardingButton.swift in Sources */,
 				E10260D52C77D8BA002EA5AD /* MatchesScreen.swift in Sources */,
@@ -813,11 +842,14 @@
 				E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
+				E12304112C91D7B0009C5F01 /* PetRepository+Injection.swift in Sources */,
+				E12304152C91F03E009C5F01 /* PetViewModel.swift in Sources */,
 				E1B960BC2C45E19B00A234D1 /* AuthenticationService.swift in Sources */,
 				E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */,
 				E1ED457E2C2B991600B3D044 /* OnBoardingView.swift in Sources */,
 				E1B960C42C45E3EA00A234D1 /* SignUpScreen.swift in Sources */,
 				E1B960B02C4495A000A234D1 /* AuthenticationScreen.swift in Sources */,
+				E12304192C91FC2C009C5F01 /* PetImageLoader.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */,
 				E1ED457C2C2B98C000B3D044 /* OnboardingData.swift in Sources */,
@@ -830,17 +862,21 @@
 				E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */,
 				E12E4A0D2C3F553C00ADF27E /* AbrigoDetalheView.swift in Sources */,
 				E1B675002C0CAB25003D491D /* ProjetoCuscoApp.swift in Sources */,
+				E12304132C91EB99009C5F01 /* PetListaScreen.swift in Sources */,
 				E1ED45802C2B993900B3D044 /* OnboardingTabView.swift in Sources */,
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E1B960B42C45D6C600A234D1 /* UserProfileViewModel.swift in Sources */,
 				E10260CE2C76AF98002EA5AD /* PetScreen.swift in Sources */,
 				E188A9B52C34C4520031EC04 /* AppState.swift in Sources */,
 				E1B960BE2C45E1FD00A234D1 /* AuthenticationService+Injection.swift in Sources */,
+				E154991B2C85344B002A3A99 /* PrimaryButtonStyle.swift in Sources */,
 				E10260DB2C7900E8002EA5AD /* HomeTileView.swift in Sources */,
 				E15499192C83EC31002A3A99 /* EmailLoginButtonView.swift in Sources */,
 				E15499172C836ED1002A3A99 /* AppleLoginButtonView.swift in Sources */,
+				E12304172C91F1CA009C5F01 /* PetAddEditView.swift in Sources */,
 				E154990F2C826CB8002A3A99 /* GoogleLogInButtonView.swift in Sources */,
 				E188A9BC2C398AD60031EC04 /* AbrigoModel.swift in Sources */,
+				E123041B2C920232009C5F01 /* PhotoModel.swift in Sources */,
 				E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */,
 				E188A9C52C3CAB780031EC04 /* AbrigoAddEditView.swift in Sources */,
 				E1B960AE2C4494E600A234D1 /* SettingsScreen.swift in Sources */,

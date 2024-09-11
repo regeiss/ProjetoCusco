@@ -12,13 +12,13 @@ struct HomeScreen: View
 {
     @Environment(\.router) var router
     @AppStorage("needsAppOnboarding") var needsAppOnboarding = true
-    @State private var isSettingsScreenPresented = false
+    @StateObject private var viewModel = PetViewModel()
     
-    private var data = Pet.samples
+    // @State private var isSettingsScreenPresented = false
     
     private let flexibleColumn = [
-        GridItem(.flexible(minimum: 100, maximum: 185), spacing: 5),
-        GridItem(.flexible(minimum: 100, maximum: 185), spacing: 5)
+        GridItem(.flexible(minimum: 100, maximum: 195), spacing: 5),
+        GridItem(.flexible(minimum: 100, maximum: 195), spacing: 5)
     ]
     
     var body: some View
@@ -29,7 +29,7 @@ struct HomeScreen: View
             {
                 LazyVGrid(columns: flexibleColumn, spacing: 5)
                 {
-                    ForEach(data) { pet in
+                    ForEach(viewModel.pet) { pet in
                         HomeTileView(pet: pet)
                     }
                 }

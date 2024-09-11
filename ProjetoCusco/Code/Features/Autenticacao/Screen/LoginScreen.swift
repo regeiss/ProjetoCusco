@@ -45,22 +45,7 @@ struct LoginScreen: View
             
             Spacer()
             
-            VStack
-            {
-                Image("login")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(minHeight: 300, maxHeight: 400)
-                Text("Login")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                
-            }
-            .listStyle(.plain)
-            
-            EmailLoginButtonView()
+            // EmailLoginButtonView()
             AppleLoginButtonView()
             GoogleLoginButtonView()
             
@@ -74,12 +59,17 @@ struct LoginScreen: View
                         .foregroundColor(.blue)
                 }
             }
-            .padding(.vertical, 8)
+            .padding(.bottom, 8)
         }
-        .padding()
-        // .analyticsScreen(name: "\(Self.self)")
     }
-    
-    // MARK: - Funcs
-   
+}
+
+#Preview
+{
+    Group
+    {
+        LoginScreen()
+            .preferredColorScheme(.light)
+    }
+    .environmentObject(AuthenticationViewModel())
 }
