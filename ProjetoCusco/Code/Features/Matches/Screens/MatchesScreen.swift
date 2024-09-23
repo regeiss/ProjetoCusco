@@ -6,13 +6,24 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
-struct MatchesScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct MatchesScreen: View
+{
+    @Environment(\.router) var router
+    @StateObject private var viewModel = TagViewModel()
+    
+    var body: some View
+    {
+        MatchFlowLayoutScreen(alignment: .leading)
+        {
+            ForEach($viewModel.tag) { tag in
+                Button(action: {
+                    $viewModel.$tag
+                }, label: {
+                    Text("tag.nome")
+                })
+            }
+        }
     }
 }
-
-//#Preview {
-//    MatchesScreen()
-//}

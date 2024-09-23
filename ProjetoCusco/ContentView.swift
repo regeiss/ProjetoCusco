@@ -15,6 +15,7 @@ enum Tabs: String, CaseIterable
     case profile
     case pets
     case settings
+    case tags
 }
 
 struct ContentView: View
@@ -53,6 +54,12 @@ struct ContentView: View
                 .tag(Tabs.profile)
                 .tabItem {
                     Image(systemName: "person")
+                }
+            
+            TagListaScreen()
+                .tag(Tabs.tags)
+                .tabItem {
+                    Image(systemName: "tag")
                 }
         }.toolbarBackground(.indigo, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)

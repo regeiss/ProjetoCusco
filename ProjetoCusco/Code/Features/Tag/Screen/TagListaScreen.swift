@@ -1,39 +1,39 @@
 //
-//  PetListScreen.swift
+//  TagListaScreen.swift
 //  ProjetoCusco
 //
-//  Created by Roberto Edgar Geiss on 11/09/24.
+//  Created by Roberto Edgar Geiss on 22/09/24.
 //
 
 import SwiftUI
 import SwiftfulRouting
 
-struct PetListaScreen: View
+struct TagListaScreen: View
 {
     @Environment(\.router) var router
-    @StateObject private var viewModel = PetViewModel()
-    @State var editablePet: Pet?
+    @StateObject private var viewModel = TagViewModel()
+    @State var editableTag: Tag?
     @State var isAddDialogPresented = false
 
     var body: some View
     {
         RouterView { _ in
             
-            List($viewModel.pet) { $pet in
-                PetDetalheView(pet: $pet)
+            List($viewModel.tag) { $tag in
+                TagDetalheView(tag: $tag)
                     .swipeActions(edge: .trailing, allowsFullSwipe: true)
                 {
-                    Button(role: .destructive, action: { viewModel.delete(pet)})
+                    Button(role: .destructive, action: { viewModel.delete(tag)})
                     {
                         Image(systemName: "trash")
                     }
                 }
                 .onTapGesture
                 {
-                    editablePet = pet
+                    editableTag = tag
                 }
             }
-            .navigationTitle("Pet")
+            .navigationTitle("Tag")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing)
                 {
@@ -45,13 +45,13 @@ struct PetListaScreen: View
             }
             .sheet(isPresented: $isAddDialogPresented)
             {
-                PetAddEditView { pet in
-                    viewModel.addPet(pet)
+                TagAddEditView { tag in
+                    viewModel.addTag(tag)
                 }
             }
-            .sheet(item: $editablePet) { pet in
-                PetAddEditView(pet: pet, mode: .edit) { pet in
-                    viewModel.update(pet)
+            .sheet(item: $editableTag) { tag in
+                TagAddEditView(tag: tag, mode: .edit) { tag in
+                    viewModel.update(tag)
                 }
             }
             .tint(.blue)

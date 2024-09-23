@@ -22,13 +22,3 @@ extension Pet
 {
     static let collectionName = "pet"
 }
-
-extension Pet
-{
-  static let samples = [
-    Pet(id: "1", nome: "Cusco 1", ativo: true),
-    Pet(id: "2", nome: "Cusc0 2"),
-    Pet(id: "3", nome: "Cusco 3"),
-    Pet(id: "4", nome: "Cusco 4")
-  ]
-}

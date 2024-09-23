@@ -1,8 +1,8 @@
 //
-//  PetRepository.swift
+//  TagRepository.swift
 //  ProjetoCusco
 //
-//  Created by Roberto Edgar Geiss on 11/09/24.
+//  Created by Roberto Edgar Geiss on 22/09/24.
 //
 
 import Foundation
@@ -12,11 +12,11 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 import FirebaseAuth
 
-public class PetRepository: ObservableObject
+public class TagRepository: ObservableObject
 {
     @Injected(\.firestore) var firestore
     @Injected(\.authenticationService) var authenticationService
-    @Published var pet = [Pet]()
+    @Published var tag = [Tag]()
     @Published var user: User?
     
     private var listenerRegistration: ListenerRegistration?
@@ -42,7 +42,7 @@ public class PetRepository: ObservableObject
     func subscribe(user: User? = nil)
     {
         if listenerRegistration == nil {
-            let query = Firestore.firestore().collection(Pet.collectionName)
+            let query = Firestore.firestore().collection(Tag.collectionName)
             
             listenerRegistration = query
                 .addSnapshotListener { [weak self] (querySnapshot, error) in
@@ -54,10 +54,10 @@ public class PetRepository: ObservableObject
                     }
                     
                     print("Mapping \(documents.count) documents")
-                    self?.pet = documents.compactMap { queryDocumentSnapshot in
+                    self?.tag = documents.compactMap { queryDocumentSnapshot in
                         do
                         {
-                            return try queryDocumentSnapshot.data(as: Pet.self)
+                            return try queryDocumentSnapshot.data(as: Tag.self)
                         }
                         catch
                         {
@@ -78,37 +78,37 @@ public class PetRepository: ObservableObject
         }
     }
     
-    func addPet(_ pet: Pet) throws
+    func addTag(_ tag: Tag) throws
     {
         try firestore
-            .collection(Pet.collectionName)
-            .addDocument(from: pet)
+            .collection(Tag.collectionName)
+            .addDocument(from: tag)
     }
     
-    func update(_ pet: Pet) throws
+    func update(_ tag: Tag) throws
     {
-        guard let documentId = pet.id
+        guard let documentId = tag.id
         else
         {
-            fatalError("Pet \(pet.nome) has no document ID.")
+            fatalError("Tag \(tag.nome) has no document ID.")
         }
         
         try firestore
-            .collection(Pet.collectionName)
+            .collection(Tag.collectionName)
             .document(documentId)
-            .setData(from: pet, merge: true)
+            .setData(from: tag, merge: true)
     }
     
-    func delete(_ pet: Pet)
+    func delete(_ tag: Tag)
     {
-        guard let documentId = pet.id
+        guard let documentId = tag.id
         else
         {
-            fatalError("Pet \(pet.nome) has no document ID.")
+            fatalError("Tag \(tag.nome) has no document ID.")
         }
         
         firestore
-            .collection(Pet.collectionName)
+            .collection(Tag.collectionName)
             .document(documentId)
             .delete()
     }

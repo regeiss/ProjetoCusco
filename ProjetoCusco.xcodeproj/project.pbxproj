@@ -14,6 +14,14 @@
 		E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */; };
 		E10260DB2C7900E8002EA5AD /* HomeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DA2C7900E8002EA5AD /* HomeTileView.swift */; };
 		E10260DD2C790301002EA5AD /* PetDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10260DC2C790301002EA5AD /* PetDetalheView.swift */; };
+		E116C31B2CA09159007A6D63 /* MatchFlowLayoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C31A2CA09159007A6D63 /* MatchFlowLayoutScreen.swift */; };
+		E116C3222CA09582007A6D63 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C3212CA09582007A6D63 /* TagModel.swift */; };
+		E116C3242CA0960C007A6D63 /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C3232CA0960C007A6D63 /* TagViewModel.swift */; };
+		E116C3262CA097BC007A6D63 /* TagRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C3252CA097BC007A6D63 /* TagRepository.swift */; };
+		E116C3282CA09891007A6D63 /* TagRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C3272CA09891007A6D63 /* TagRepository+Injection.swift */; };
+		E116C32B2CA09D16007A6D63 /* TagListaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C32A2CA09D16007A6D63 /* TagListaScreen.swift */; };
+		E116C32D2CA0D53A007A6D63 /* TagDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C32C2CA0D53A007A6D63 /* TagDetalheView.swift */; };
+		E116C32F2CA0D872007A6D63 /* TagAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116C32E2CA0D872007A6D63 /* TagAddEditView.swift */; };
 		E123040D2C91D2AE009C5F01 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123040C2C91D2AE009C5F01 /* PetModel.swift */; };
 		E123040F2C91D5E6009C5F01 /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123040E2C91D5E6009C5F01 /* PetRepository.swift */; };
 		E12304112C91D7B0009C5F01 /* PetRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12304102C91D7B0009C5F01 /* PetRepository+Injection.swift */; };
@@ -90,6 +98,7 @@
 		E1B960C22C45E3A900A234D1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C12C45E3A900A234D1 /* LoginScreen.swift */; };
 		E1B960C42C45E3EA00A234D1 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B960C32C45E3EA00A234D1 /* SignUpScreen.swift */; };
 		E1C41D982C7CEA2D006DD686 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1C41D972C7CEA2D006DD686 /* GoogleService-Info.plist */; };
+		E1E5654B2C93B7F2003015F3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5654A2C93B7F2003015F3 /* ImagePicker.swift */; };
 		E1E6B4AC2C5C495100916E6E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */; };
 		E1E6B4B12C5E7CD400916E6E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E1E6B4B02C5E7CD400916E6E /* GoogleSignIn */; };
 		E1E6B4B32C5E7CD400916E6E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1E6B4B22C5E7CD400916E6E /* GoogleSignInSwift */; };
@@ -110,6 +119,14 @@
 		E10260D82C77EEAE002EA5AD /* HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegate.swift; sourceTree = "<group>"; };
 		E10260DA2C7900E8002EA5AD /* HomeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileView.swift; sourceTree = "<group>"; };
 		E10260DC2C790301002EA5AD /* PetDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetalheView.swift; sourceTree = "<group>"; };
+		E116C31A2CA09159007A6D63 /* MatchFlowLayoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFlowLayoutScreen.swift; sourceTree = "<group>"; };
+		E116C3212CA09582007A6D63 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		E116C3232CA0960C007A6D63 /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		E116C3252CA097BC007A6D63 /* TagRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRepository.swift; sourceTree = "<group>"; };
+		E116C3272CA09891007A6D63 /* TagRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TagRepository+Injection.swift"; sourceTree = "<group>"; };
+		E116C32A2CA09D16007A6D63 /* TagListaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListaScreen.swift; sourceTree = "<group>"; };
+		E116C32C2CA0D53A007A6D63 /* TagDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetalheView.swift; sourceTree = "<group>"; };
+		E116C32E2CA0D872007A6D63 /* TagAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAddEditView.swift; sourceTree = "<group>"; };
 		E123040C2C91D2AE009C5F01 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		E123040E2C91D5E6009C5F01 /* PetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
 		E12304102C91D7B0009C5F01 /* PetRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetRepository+Injection.swift"; sourceTree = "<group>"; };
@@ -160,6 +177,7 @@
 		E1B960C32C45E3EA00A234D1 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		E1C41D962C7CE8B4006DD686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E1C41D972C7CEA2D006DD686 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1E5654A2C93B7F2003015F3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E1E6B4AB2C5C495100916E6E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E1E6B4B42C5E83B600916E6E /* GoogleSIgnIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoogleSIgnIn.xcassets; sourceTree = "<group>"; };
 		E1ED456E2C2A5AA500B3D044 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
@@ -226,8 +244,63 @@
 			isa = PBXGroup;
 			children = (
 				E10260D42C77D8BA002EA5AD /* MatchesScreen.swift */,
+				E116C31A2CA09159007A6D63 /* MatchFlowLayoutScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		E116C31C2CA094B4007A6D63 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				E116C3292CA09D03007A6D63 /* Screen */,
+				E116C31D2CA094BC007A6D63 /* Model */,
+				E116C31F2CA094D3007A6D63 /* Repository */,
+				E116C3202CA094E9007A6D63 /* View */,
+				E116C31E2CA094C6007A6D63 /* ViewModel */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		E116C31D2CA094BC007A6D63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E116C3212CA09582007A6D63 /* TagModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E116C31E2CA094C6007A6D63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E116C3232CA0960C007A6D63 /* TagViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E116C31F2CA094D3007A6D63 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E116C3252CA097BC007A6D63 /* TagRepository.swift */,
+				E116C3272CA09891007A6D63 /* TagRepository+Injection.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E116C3202CA094E9007A6D63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E116C32C2CA0D53A007A6D63 /* TagDetalheView.swift */,
+				E116C32E2CA0D872007A6D63 /* TagAddEditView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E116C3292CA09D03007A6D63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E116C32A2CA09D16007A6D63 /* TagListaScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		E12E4A132C42069100ADF27E /* Firebase */ = {
@@ -560,6 +633,7 @@
 				E10260D22C77D5FE002EA5AD /* Matches */,
 				E1AAA2822C7FE27D00E7B740 /* Perfil */,
 				E1A522502C74051300E19242 /* Pet */,
+				E116C31C2CA094B4007A6D63 /* Tag */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -576,6 +650,7 @@
 		E1B675182C0D3481003D491D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E1E565492C93B7E2003015F3 /* Images */,
 				E19FCAA82C1A838D00732192 /* Themes */,
 			);
 			path = Common;
@@ -682,6 +757,14 @@
 				E1B960BD2C45E1FD00A234D1 /* AuthenticationService+Injection.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E1E565492C93B7E2003015F3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E1E5654A2C93B7F2003015F3 /* ImagePicker.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,11 +910,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E116C32B2CA09D16007A6D63 /* TagListaScreen.swift in Sources */,
 				E10260DD2C790301002EA5AD /* PetDetalheView.swift in Sources */,
 				E1B960B22C449F4100A234D1 /* UserProfileView.swift in Sources */,
 				E1B960AC2C4494C000A234D1 /* SettingsViewModel.swift in Sources */,
+				E1E5654B2C93B7F2003015F3 /* ImagePicker.swift in Sources */,
 				E123040D2C91D2AE009C5F01 /* PetModel.swift in Sources */,
 				E19FCAAD2C1F4FC800732192 /* NetworkRequest.swift in Sources */,
+				E116C3262CA097BC007A6D63 /* TagRepository.swift in Sources */,
 				E10260D72C77EC6B002EA5AD /* HomeViewModel.swift in Sources */,
 				E123040F2C91D5E6009C5F01 /* PetRepository.swift in Sources */,
 				E1B960B92C45DE0C00A234D1 /* AuthenticationViewModel.swift in Sources */,
@@ -841,6 +927,7 @@
 				E1A522582C7519D900E19242 /* HomeModel.swift in Sources */,
 				E1ED456F2C2A5AA500B3D044 /* AppTheme.swift in Sources */,
 				E19FCAB12C1F9B5400732192 /* NetworkManager+Extensions.swift in Sources */,
+				E116C32D2CA0D53A007A6D63 /* TagDetalheView.swift in Sources */,
 				E19FCAAB2C1F4F5400732192 /* NetworkError.swift in Sources */,
 				E12304112C91D7B0009C5F01 /* PetRepository+Injection.swift in Sources */,
 				E12304152C91F03E009C5F01 /* PetViewModel.swift in Sources */,
@@ -848,10 +935,12 @@
 				E1ED45752C2A5F5000B3D044 /* KeyChain.swift in Sources */,
 				E1ED457E2C2B991600B3D044 /* OnBoardingView.swift in Sources */,
 				E1B960C42C45E3EA00A234D1 /* SignUpScreen.swift in Sources */,
+				E116C3222CA09582007A6D63 /* TagModel.swift in Sources */,
 				E1B960B02C4495A000A234D1 /* AuthenticationScreen.swift in Sources */,
 				E12304192C91FC2C009C5F01 /* PetImageLoader.swift in Sources */,
 				E1B675022C0CAB25003D491D /* ContentView.swift in Sources */,
 				E12E4A122C4204D600ADF27E /* AbrigoRepository+Injection.swift in Sources */,
+				E116C32F2CA0D872007A6D63 /* TagAddEditView.swift in Sources */,
 				E1ED457C2C2B98C000B3D044 /* OnboardingData.swift in Sources */,
 				E188A9C32C3B0FFA0031EC04 /* AbrigoListaScreen.swift in Sources */,
 				E1B960C22C45E3A900A234D1 /* LoginScreen.swift in Sources */,
@@ -866,6 +955,7 @@
 				E1ED45802C2B993900B3D044 /* OnboardingTabView.swift in Sources */,
 				E19FCAAF2C1F99A500732192 /* NetworkManager.swift in Sources */,
 				E1B960B42C45D6C600A234D1 /* UserProfileViewModel.swift in Sources */,
+				E116C3282CA09891007A6D63 /* TagRepository+Injection.swift in Sources */,
 				E10260CE2C76AF98002EA5AD /* PetScreen.swift in Sources */,
 				E188A9B52C34C4520031EC04 /* AppState.swift in Sources */,
 				E1B960BE2C45E1FD00A234D1 /* AuthenticationService+Injection.swift in Sources */,
@@ -878,8 +968,10 @@
 				E188A9BC2C398AD60031EC04 /* AbrigoModel.swift in Sources */,
 				E123041B2C920232009C5F01 /* PhotoModel.swift in Sources */,
 				E10260D92C77EEAE002EA5AD /* HomeViewModelDelegate.swift in Sources */,
+				E116C31B2CA09159007A6D63 /* MatchFlowLayoutScreen.swift in Sources */,
 				E188A9C52C3CAB780031EC04 /* AbrigoAddEditView.swift in Sources */,
 				E1B960AE2C4494E600A234D1 /* SettingsScreen.swift in Sources */,
+				E116C3242CA0960C007A6D63 /* TagViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

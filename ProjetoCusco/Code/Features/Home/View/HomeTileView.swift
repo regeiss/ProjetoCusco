@@ -17,8 +17,13 @@ struct HomeTileView: View
         ZStack(alignment: .bottomTrailing)
         {
             AsyncImage(url: URL(string: pet.imageURLString ?? ""))
-            { result in
-                result.image?
+            { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            }
+            placeholder: {
+                Image(systemName: "photo.fill")
                     .resizable()
                     .scaledToFill()
             }
