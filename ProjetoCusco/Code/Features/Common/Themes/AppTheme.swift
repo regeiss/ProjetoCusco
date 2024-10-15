@@ -9,7 +9,7 @@ import SwiftUI
 
 class AppThemeViewModel: ObservableObject
 {
-    @AppStorage("modoEscuro") var isDarkMode: Bool = true
+    @AppStorage("modoEscuro") var isDarkMode: Bool = false
 }
 
 struct DarkModeViewModifier: ViewModifier

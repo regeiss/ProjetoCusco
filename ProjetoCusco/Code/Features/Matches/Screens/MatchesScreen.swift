@@ -15,15 +15,17 @@ struct MatchesScreen: View
     
     var body: some View
     {
-        MatchFlowLayoutScreen(alignment: .leading)
-        {
-            ForEach($viewModel.tag) { tag in
-                Button(action: {
-                    $viewModel.$tag
-                }, label: {
-                    Text("tag.nome")
-                })
-            }
-        }
+       // RouterView { _ in
+            MatchFlowLayoutScreen(alignment: .leading)
+            {
+                ForEach(viewModel.tag) { tag in
+                    Button(action: {
+                        viewModel.selectTag(tag)
+                    }, label: {
+                        Text("# " + (tag.nome))
+                    }).buttonStyle(.borderedProminent)
+                }
+            }.navigationTitle("Tags")
+        //}
     }
 }

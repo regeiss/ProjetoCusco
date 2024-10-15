@@ -35,6 +35,7 @@ struct HomeScreen: View
                 }
             }.navigationTitle("Home")
              .navigationBarTitleDisplayMode(.large)
+             .background(Color.background)
         }
     }
 }

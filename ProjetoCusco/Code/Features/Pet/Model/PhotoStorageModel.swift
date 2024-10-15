@@ -1,5 +1,5 @@
 //
-//  PhotoModel.swift
+//  PhotoStorageModel.swift
 //  ProjetoCusco
 //
 //  Created by Roberto Edgar Geiss on 11/09/24.
@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Photo: Identifiable, Codable
+struct PhotoStorage: Identifiable, Codable
 {
     @DocumentID var id: String?
     var imageURLString: String = ""
@@ -22,3 +22,4 @@ struct Photo: Identifiable, Codable
         return ["imageURLString": imageURLString, "descricao": descricao, "reviewer": reviewer, "postedOn": Timestamp(date: Date())]
     }
 }
+

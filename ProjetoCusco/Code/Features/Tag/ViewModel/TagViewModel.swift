@@ -53,6 +53,11 @@ class TagViewModel: ObservableObject
     {
         tagRepository.delete(tag)
     }
+
+    func selectTag(_ tag: Tag)
+    {
+        
+    }
     //  func toggleCompleted(_ reminder: Tag) {
     //    if let index = tags.firstIndex(where: { $0.id == reminder.id} ) {
     //      tags[index].isCompleted.toggle()

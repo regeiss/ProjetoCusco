@@ -62,7 +62,8 @@ struct ContentView: View
                     Image(systemName: "tag")
                 }
         }.toolbarBackground(.indigo, for: .tabBar)
-            .toolbarBackground(.visible, for: .tabBar)
-            .toolbarColorScheme(.dark, for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .toolbarColorScheme(.dark, for: .tabBar)
     }
+    
 }

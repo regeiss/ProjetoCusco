@@ -34,18 +34,6 @@ struct PetDetalheView: View
                 Text(pet.nome).font(.title)
                     .padding()
                 Spacer()
-                
-//                HStack
-//                {
-//                    Text("ativo ")
-//                    Image(systemName: pet.ativo ? "largecircle.fill.circle" : "circle")
-//                        .imageScale(.medium)
-//                        .foregroundColor(.accentColor)
-//                        .onTapGesture {
-//                            pet.ativo.toggle()
-//                        }
-//                    Spacer()
-//                }
             }
         }
     }

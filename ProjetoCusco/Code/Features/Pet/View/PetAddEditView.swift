@@ -6,38 +6,64 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
 struct PetAddEditView: View
 {
+    @Environment(\.dismiss) private var dismiss
+    @FocusState private var focusedField: FocusableField?
+    @StateObject var photoViewModel = PhotoPickerModel()
+    @State var pet = Pet(nome: "")
+    @State var isEditingtPicture: Bool = false
+    
     enum FocusableField: Hashable
     {
         case nome
     }
-
+    
     enum Mode
     {
         case add
         case edit
     }
-
-    @Environment(\.dismiss) private var dismiss
-    @FocusState private var focusedField: FocusableField?
-    @State var pet = Pet(nome: "")
-
+    
     var mode: Mode = .add
     var onCommit: (_ pet: Pet) -> Void
-
+    
     var body: some View
     {
-        NavigationStack
-        {
+        RouterView { _ in
+            
             Form
             {
+//                HStack
+//                {
+//                    Spacer()
+//                    EditableCircularPetImage(viewModel: photoViewModel)
+//                    Spacer()
+//                }
+                                AsyncImage(url: URL(string: pet.imageURLString ?? ""))
+                                { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                }
+                                placeholder: {
+                                    Image(systemName: "photo.fill")
+                                        .resizable()
+                                        .scaledToFill()
+                                }
+                                .frame(width: 95, height: 95, alignment: .center)
+                                .cornerRadius(10)
+                                .onTapGesture {
+                                    isEditingtPicture.toggle()
+                                }
+                
                 TextField("Nome", text: $pet.nome)
                     .focused($focusedField, equals: .nome)
                     .onSubmit {
                         commit()
-
+                        
                     }
                 Toggle(isOn: $pet.ativo) {
                     Text("ativo")
@@ -61,19 +87,23 @@ struct PetAddEditView: View
                     .disabled(pet.nome.isEmpty)
                 }
             }
-            .onAppear
+            .sheet(isPresented: $isEditingtPicture)
             {
-                focusedField = .nome
+                EditableCircularPetImage(viewModel: photoViewModel)
             }
         }
+        .onAppear
+        {
+            focusedField = .nome
+        }
     }
-
+    
     private func commit()
     {
         onCommit(pet)
         dismiss()
     }
-
+    
     private func cancel()
     {
         dismiss()

@@ -61,41 +61,41 @@ class PetViewModel: ObservableObject
     //    }
     //  }
     
-    func saveImage(pet: Pet, photo: Photo, image: UIImage) async -> Bool
-    {
-        var imageURLString = photo.imageURLString
-        
-        guard let petId = pet.id
-        else { return false}
-        
-        let photoName = UUID().uuidString
-        let storage = Storage.storage()
-        let storageRef = storage.reference().child("\(petId)/\(photoName).jpeg")
-        
-        guard let resizedImage = image.jpegData(compressionQuality: 0.2)
-        else { return false}
-        
-        let metadata = StorageMetadata()
-        metadata.contentType = "image/jpg"
-        
-        do
-        {
-            let _ = try await storageRef.putDataAsync(resizedImage, metadata: metadata)
-            do
-            {
-                let imageURL = try await storageRef.downloadURL()
-                imageURLString = "\(imageURL)"
-            }
-            catch
-            {
-                return false
-            }
-        }
-        catch
-        {
-            print("Erro carregando imagem no Firestore")
-        }
-        
-        return true
-    }
+//    func saveImage(pet: Pet, photo: Photo, image: UIImage) async -> Bool
+//    {
+//        var imageURLString = photo.imageURLString
+//        
+//        guard let petId = pet.id
+//        else { return false}
+//        
+//        let photoName = UUID().uuidString
+//        let storage = Storage.storage()
+//        let storageRef = storage.reference().child("\(petId)/\(photoName).jpeg")
+//        
+//        guard let resizedImage = image.jpegData(compressionQuality: 0.2)
+//        else { return false}
+//        
+//        let metadata = StorageMetadata()
+//        metadata.contentType = "image/jpg"
+//        
+//        do
+//        {
+//            let _ = try await storageRef.putDataAsync(resizedImage, metadata: metadata)
+//            do
+//            {
+//                let imageURL = try await storageRef.downloadURL()
+//                imageURLString = "\(imageURL)"
+//            }
+//            catch
+//            {
+//                return false
+//            }
+//        }
+//        catch
+//        {
+//            print("Erro carregando imagem no Firestore")
+//        }
+//        
+//        return true
+//    }
 }
